@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "IMO performance trends for selected countries",
   "data": {
-    "url": "your_dataset.csv"
+    "url": "https://github.com/NguKhangWei/FIT3179_DV2/blob/main/data/cleaned_country_imo.csv"
   },
   "transform": [
     {
