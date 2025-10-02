@@ -1,0 +1,49 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "IMO performance trends for selected countries",
+  "data": {
+    "url": "your_dataset.csv"
+  },
+  "transform": [
+    {
+      "calculate": "datum.p1 + datum.p2 + datum.p3 + datum.p4 + datum.p5 + datum.p6",
+      "as": "team_total"
+    },
+    {
+      "calculate": "datum.team_total / datum.team_size_all",
+      "as": "avg_score"
+    },
+    {
+      "filter": {
+        "field": "country_new",
+        "oneOf": [
+          "China",
+          "United States of America",
+          "India",
+          "Russia",
+          "Germany",
+          "United Kingdom",
+          "South Korea",
+          "Japan",
+          "Canada",
+          "Australia"
+        ]
+      }
+    }
+  ],
+  "mark": {
+    "type": "line",
+    "point": true
+  },
+  "encoding": {
+    "x": {"field": "year", "type": "ordinal", "title": "Year"},
+    "y": {"field": "avg_score", "type": "quantitative", "title": "Average Score per Student"},
+    "color": {"field": "country_new", "type": "nominal", "title": "Country"},
+    "tooltip": [
+      {"field": "year", "type": "ordinal"},
+      {"field": "country_new", "type": "nominal"},
+      {"field": "avg_score", "type": "quantitative"},
+      {"field": "team_total", "type": "quantitative"}
+    ]
+  }
+}
