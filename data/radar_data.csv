@@ -1,0 +1,709 @@
+"","country","key","value"
+"1.p1","Albania","p1",3.57
+"1.p2","Albania","p2",0.9
+"1.p3","Albania","p3",0.03
+"1.p4","Albania","p4",2.33
+"1.p5","Albania","p5",0.23
+"1.p6","Albania","p6",0
+"2.p1","Algeria","p1",3.62
+"2.p2","Algeria","p2",1.51
+"2.p3","Algeria","p3",0.07
+"2.p4","Algeria","p4",3.33
+"2.p5","Algeria","p5",0.8
+"2.p6","Algeria","p6",0.1
+"3.p1","Argentina","p1",6.1
+"3.p2","Argentina","p2",2.57
+"3.p3","Argentina","p3",0.43
+"3.p4","Argentina","p4",3.97
+"3.p5","Argentina","p5",3.03
+"3.p6","Argentina","p6",0.23
+"4.p1","Armenia","p1",6.57
+"4.p2","Armenia","p2",3.9
+"4.p3","Armenia","p3",0.77
+"4.p4","Armenia","p4",6.47
+"4.p5","Armenia","p5",3.07
+"4.p6","Armenia","p6",0.1
+"5.p1","Australia","p1",6.4
+"5.p2","Australia","p2",4.5
+"5.p3","Australia","p3",1.23
+"5.p4","Australia","p4",6.63
+"5.p5","Australia","p5",4.23
+"5.p6","Australia","p6",0.83
+"6.p1","Austria","p1",5.67
+"6.p2","Austria","p2",2.9
+"6.p3","Austria","p3",0.47
+"6.p4","Austria","p4",3.33
+"6.p5","Austria","p5",2.93
+"6.p6","Austria","p6",0.17
+"7.p1","Azerbaijan","p1",6.27
+"7.p2","Azerbaijan","p2",2.57
+"7.p3","Azerbaijan","p3",0.2
+"7.p4","Azerbaijan","p4",4.3
+"7.p5","Azerbaijan","p5",1.63
+"7.p6","Azerbaijan","p6",0.07
+"8.p1","Bangladesh","p1",5.57
+"8.p2","Bangladesh","p2",2.33
+"8.p3","Bangladesh","p3",0.3
+"8.p4","Bangladesh","p4",6.2
+"8.p5","Bangladesh","p5",2
+"8.p6","Bangladesh","p6",0.07
+"9.p1","Belarus","p1",6.8
+"9.p2","Belarus","p2",3.83
+"9.p3","Belarus","p3",1.53
+"9.p4","Belarus","p4",7
+"9.p5","Belarus","p5",3.93
+"9.p6","Belarus","p6",0.37
+"10.p1","Belgium","p1",6.47
+"10.p2","Belgium","p2",1.87
+"10.p3","Belgium","p3",0.27
+"10.p4","Belgium","p4",3.8
+"10.p5","Belgium","p5",2
+"10.p6","Belgium","p6",0.03
+"11.p1","Bhutan","p1",0.8
+"11.p2","Bhutan","p2",0
+"11.p3","Bhutan","p3",0
+"11.p4","Bhutan","p4",0.2
+"11.p5","Bhutan","p5",0.6
+"11.p6","Bhutan","p6",0
+"12.p1","Bolivia","p1",3.25
+"12.p2","Bolivia","p2",0.71
+"12.p3","Bolivia","p3",0.13
+"12.p4","Bolivia","p4",2.46
+"12.p5","Bolivia","p5",0.29
+"12.p6","Bolivia","p6",0.13
+"13.p1","Bosnia and Herzegovina","p1",6.83
+"13.p2","Bosnia and Herzegovina","p2",3.43
+"13.p3","Bosnia and Herzegovina","p3",0.3
+"13.p4","Bosnia and Herzegovina","p4",5.43
+"13.p5","Bosnia and Herzegovina","p5",3.63
+"13.p6","Bosnia and Herzegovina","p6",0.17
+"14.p1","Botswana","p1",1.17
+"14.p2","Botswana","p2",0.1
+"14.p3","Botswana","p3",0.07
+"14.p4","Botswana","p4",0.3
+"14.p5","Botswana","p5",0.1
+"14.p6","Botswana","p6",0
+"15.p1","Brazil","p1",6.8
+"15.p2","Brazil","p2",4.8
+"15.p3","Brazil","p3",1.2
+"15.p4","Brazil","p4",6.3
+"15.p5","Brazil","p5",4.67
+"15.p6","Brazil","p6",0.53
+"16.p1","Bulgaria","p1",7
+"16.p2","Bulgaria","p2",3.07
+"16.p3","Bulgaria","p3",1.13
+"16.p4","Bulgaria","p4",6.83
+"16.p5","Bulgaria","p5",4.23
+"16.p6","Bulgaria","p6",0.73
+"17.p1","Burkina Faso","p1",1.17
+"17.p2","Burkina Faso","p2",0
+"17.p3","Burkina Faso","p3",0
+"17.p4","Burkina Faso","p4",0.17
+"17.p5","Burkina Faso","p5",0
+"17.p6","Burkina Faso","p6",0
+"18.p1","Cameroon","p1",1
+"18.p2","Cameroon","p2",0
+"18.p3","Cameroon","p3",0
+"18.p4","Cameroon","p4",0
+"18.p5","Cameroon","p5",0
+"18.p6","Cameroon","p6",0
+"19.p1","Canada","p1",6.8
+"19.p2","Canada","p2",4.3
+"19.p3","Canada","p3",2.2
+"19.p4","Canada","p4",6.53
+"19.p5","Canada","p5",5.27
+"19.p6","Canada","p6",1.7
+"20.p1","Chile","p1",3.5
+"20.p2","Chile","p2",0.3
+"20.p3","Chile","p3",0.07
+"20.p4","Chile","p4",0.93
+"20.p5","Chile","p5",0.93
+"20.p6","Chile","p6",0.05
+"21.p1","China","p1",7
+"21.p2","China","p2",6
+"21.p3","China","p3",5.67
+"21.p4","China","p4",6.93
+"21.p5","China","p5",6.33
+"21.p6","China","p6",4.9
+"22.p1","Colombia","p1",5.47
+"22.p2","Colombia","p2",1.77
+"22.p3","Colombia","p3",0.07
+"22.p4","Colombia","p4",4.43
+"22.p5","Colombia","p5",2.13
+"22.p6","Colombia","p6",0.1
+"23.p1","Costa Rica","p1",4.1
+"23.p2","Costa Rica","p2",1.13
+"23.p3","Costa Rica","p3",0.03
+"23.p4","Costa Rica","p4",3.43
+"23.p5","Costa Rica","p5",1.1
+"23.p6","Costa Rica","p6",0
+"24.p1","Côte d'Ivoire","p1",2.33
+"24.p2","Côte d'Ivoire","p2",0
+"24.p3","Côte d'Ivoire","p3",0
+"24.p4","Côte d'Ivoire","p4",0.67
+"24.p5","Côte d'Ivoire","p5",0.17
+"24.p6","Côte d'Ivoire","p6",0
+"25.p1","Croatia","p1",6.87
+"25.p2","Croatia","p2",3.1
+"25.p3","Croatia","p3",0.67
+"25.p4","Croatia","p4",5.77
+"25.p5","Croatia","p5",3.87
+"25.p6","Croatia","p6",0.37
+"26.p1","Cuba","p1",4.83
+"26.p2","Cuba","p2",0.17
+"26.p3","Cuba","p3",0
+"26.p4","Cuba","p4",2.06
+"26.p5","Cuba","p5",0.67
+"26.p6","Cuba","p6",0.06
+"27.p1","Cyprus","p1",4.93
+"27.p2","Cyprus","p2",1.6
+"27.p3","Cyprus","p3",0.1
+"27.p4","Cyprus","p4",3.8
+"27.p5","Cyprus","p5",0.83
+"27.p6","Cyprus","p6",0.07
+"28.p1","Czech Republic","p1",6.33
+"28.p2","Czech Republic","p2",2.27
+"28.p3","Czech Republic","p3",0.73
+"28.p4","Czech Republic","p4",5.83
+"28.p5","Czech Republic","p5",4.27
+"28.p6","Czech Republic","p6",0.67
+"29.p1","Denmark","p1",5.83
+"29.p2","Denmark","p2",1.67
+"29.p3","Denmark","p3",0.5
+"29.p4","Denmark","p4",4.97
+"29.p5","Denmark","p5",1.77
+"29.p6","Denmark","p6",0.17
+"30.p1","Dominican Republic","p1",2.43
+"30.p2","Dominican Republic","p2",0.07
+"30.p3","Dominican Republic","p3",0
+"30.p4","Dominican Republic","p4",1.62
+"30.p5","Dominican Republic","p5",0.5
+"30.p6","Dominican Republic","p6",0
+"31.p1","Ecuador","p1",3.37
+"31.p2","Ecuador","p2",0.47
+"31.p3","Ecuador","p3",0.03
+"31.p4","Ecuador","p4",2.4
+"31.p5","Ecuador","p5",0.57
+"31.p6","Ecuador","p6",0
+"32.p1","Egypt","p1",0.5
+"32.p2","Egypt","p2",0
+"32.p3","Egypt","p3",0
+"32.p4","Egypt","p4",0
+"32.p5","Egypt","p5",0.5
+"32.p6","Egypt","p6",0
+"33.p1","El Salvador","p1",4.97
+"33.p2","El Salvador","p2",1.85
+"33.p3","El Salvador","p3",0.17
+"33.p4","El Salvador","p4",3.39
+"33.p5","El Salvador","p5",0.73
+"33.p6","El Salvador","p6",0
+"34.p1","Estonia","p1",6.13
+"34.p2","Estonia","p2",2.37
+"34.p3","Estonia","p3",0.2
+"34.p4","Estonia","p4",4.5
+"34.p5","Estonia","p5",2.4
+"34.p6","Estonia","p6",0.07
+"35.p1","Finland","p1",5.07
+"35.p2","Finland","p2",1.9
+"35.p3","Finland","p3",0.07
+"35.p4","Finland","p4",3.73
+"35.p5","Finland","p5",2.4
+"35.p6","Finland","p6",0.13
+"36.p1","France","p1",6.23
+"36.p2","France","p2",4.1
+"36.p3","France","p3",1.07
+"36.p4","France","p4",6.67
+"36.p5","France","p5",4.13
+"36.p6","France","p6",0.87
+"37.p1","Georgia","p1",6.17
+"37.p2","Georgia","p2",2.73
+"37.p3","Georgia","p3",0.83
+"37.p4","Georgia","p4",6.07
+"37.p5","Georgia","p5",3.3
+"37.p6","Georgia","p6",0.27
+"38.p1","Germany","p1",6.73
+"38.p2","Germany","p2",4.93
+"38.p3","Germany","p3",1.03
+"38.p4","Germany","p4",6.27
+"38.p5","Germany","p5",5
+"38.p6","Germany","p6",0.6
+"39.p1","Ghana","p1",2.53
+"39.p2","Ghana","p2",0.21
+"39.p3","Ghana","p3",0.08
+"39.p4","Ghana","p4",0.65
+"39.p5","Ghana","p5",0.45
+"39.p6","Ghana","p6",0
+"40.p1","Greece","p1",5.97
+"40.p2","Greece","p2",3.67
+"40.p3","Greece","p3",0.6
+"40.p4","Greece","p4",5.47
+"40.p5","Greece","p5",3.03
+"40.p6","Greece","p6",0.17
+"41.p1","Guatemala","p1",2
+"41.p2","Guatemala","p2",0
+"41.p3","Guatemala","p3",0
+"41.p4","Guatemala","p4",0.5
+"41.p5","Guatemala","p5",0
+"41.p6","Guatemala","p6",0
+"42.p1","Honduras","p1",2.77
+"42.p2","Honduras","p2",0.15
+"42.p3","Honduras","p3",0
+"42.p4","Honduras","p4",2.03
+"42.p5","Honduras","p5",0.05
+"42.p6","Honduras","p6",0
+"43.p1","Hong Kong","p1",6.87
+"43.p2","Hong Kong","p2",3.83
+"43.p3","Hong Kong","p3",1.73
+"43.p4","Hong Kong","p4",6.5
+"43.p5","Hong Kong","p5",4.13
+"43.p6","Hong Kong","p6",0.8
+"44.p1","Hungary","p1",6.9
+"44.p2","Hungary","p2",4.33
+"44.p3","Hungary","p3",1.9
+"44.p4","Hungary","p4",5.63
+"44.p5","Hungary","p5",4.5
+"44.p6","Hungary","p6",0.97
+"45.p1","Iceland","p1",3.13
+"45.p2","Iceland","p2",0.3
+"45.p3","Iceland","p3",0
+"45.p4","Iceland","p4",1.4
+"45.p5","Iceland","p5",1
+"45.p6","Iceland","p6",0.07
+"46.p1","India","p1",6.25
+"46.p2","India","p2",4.54
+"46.p3","India","p3",1.92
+"46.p4","India","p4",6.12
+"46.p5","India","p5",5.04
+"46.p6","India","p6",1.62
+"47.p1","Indonesia","p1",6.87
+"47.p2","Indonesia","p2",3.2
+"47.p3","Indonesia","p3",0.6
+"47.p4","Indonesia","p4",6.7
+"47.p5","Indonesia","p5",3.17
+"47.p6","Indonesia","p6",0.1
+"48.p1","Iran","p1",6.83
+"48.p2","Iran","p2",4.53
+"48.p3","Iran","p3",1.67
+"48.p4","Iran","p4",6.8
+"48.p5","Iran","p5",4.5
+"48.p6","Iran","p6",0.77
+"49.p1","Iraq","p1",2.2
+"49.p2","Iraq","p2",0.28
+"49.p3","Iraq","p3",0.05
+"49.p4","Iraq","p4",1.48
+"49.p5","Iraq","p5",0.6
+"49.p6","Iraq","p6",0
+"50.p1","Ireland","p1",4.37
+"50.p2","Ireland","p2",0.73
+"50.p3","Ireland","p3",0.03
+"50.p4","Ireland","p4",2.93
+"50.p5","Ireland","p5",1.23
+"50.p6","Ireland","p6",0
+"51.p1","Israel","p1",6.4
+"51.p2","Israel","p2",4.33
+"51.p3","Israel","p3",2.1
+"51.p4","Israel","p4",6.77
+"51.p5","Israel","p5",5.37
+"51.p6","Israel","p6",0.97
+"52.p1","Italy","p1",6.77
+"52.p2","Italy","p2",4.83
+"52.p3","Italy","p3",1.5
+"52.p4","Italy","p4",6.53
+"52.p5","Italy","p5",6
+"52.p6","Italy","p6",1.03
+"53.p1","Japan","p1",6.97
+"53.p2","Japan","p2",4.33
+"53.p3","Japan","p3",1.77
+"53.p4","Japan","p4",6.37
+"53.p5","Japan","p5",5
+"53.p6","Japan","p6",1.3
+"54.p1","Kazakhstan","p1",6.73
+"54.p2","Kazakhstan","p2",5.13
+"54.p3","Kazakhstan","p3",1.17
+"54.p4","Kazakhstan","p4",6.73
+"54.p5","Kazakhstan","p5",3.8
+"54.p6","Kazakhstan","p6",0.37
+"55.p1","Kenya","p1",0.47
+"55.p2","Kenya","p2",0.1
+"55.p3","Kenya","p3",0
+"55.p4","Kenya","p4",0.08
+"55.p5","Kenya","p5",0.05
+"55.p6","Kenya","p6",0
+"56.p1","Kyrgyzstan","p1",4.53
+"56.p2","Kyrgyzstan","p2",1.67
+"56.p3","Kyrgyzstan","p3",0.03
+"56.p4","Kyrgyzstan","p4",3.67
+"56.p5","Kyrgyzstan","p5",1.7
+"56.p6","Kyrgyzstan","p6",0.07
+"57.p1","Latvia","p1",5.43
+"57.p2","Latvia","p2",1.33
+"57.p3","Latvia","p3",0.07
+"57.p4","Latvia","p4",4.97
+"57.p5","Latvia","p5",1.87
+"57.p6","Latvia","p6",0
+"58.p1","Liechtenstein","p1",6
+"58.p2","Liechtenstein","p2",0.33
+"58.p3","Liechtenstein","p3",0.17
+"58.p4","Liechtenstein","p4",4.67
+"58.p5","Liechtenstein","p5",0.33
+"58.p6","Liechtenstein","p6",0
+"59.p1","Lithuania","p1",6
+"59.p2","Lithuania","p2",1.93
+"59.p3","Lithuania","p3",0.71
+"59.p4","Lithuania","p4",4.1
+"59.p5","Lithuania","p5",2.53
+"59.p6","Lithuania","p6",0
+"60.p1","Luxembourg","p1",2.31
+"60.p2","Luxembourg","p2",0.15
+"60.p3","Luxembourg","p3",0
+"60.p4","Luxembourg","p4",2.21
+"60.p5","Luxembourg","p5",0.31
+"60.p6","Luxembourg","p6",0
+"61.p1","Macau","p1",5.33
+"61.p2","Macau","p2",1.9
+"61.p3","Macau","p3",0.17
+"61.p4","Macau","p4",4.1
+"61.p5","Macau","p5",2.7
+"61.p6","Macau","p6",0
+"62.p1","Malaysia","p1",6
+"62.p2","Malaysia","p2",2.77
+"62.p3","Malaysia","p3",1.03
+"62.p4","Malaysia","p4",5.73
+"62.p5","Malaysia","p5",3.27
+"62.p6","Malaysia","p6",0.3
+"63.p1","Mauritania","p1",0.94
+"63.p2","Mauritania","p2",0.78
+"63.p3","Mauritania","p3",0
+"63.p4","Mauritania","p4",2.22
+"63.p5","Mauritania","p5",0.11
+"63.p6","Mauritania","p6",0
+"64.p1","Mexico","p1",6.9
+"64.p2","Mexico","p2",3.2
+"64.p3","Mexico","p3",1.33
+"64.p4","Mexico","p4",6.43
+"64.p5","Mexico","p5",4
+"64.p6","Mexico","p6",0.4
+"65.p1","Moldova","p1",5.81
+"65.p2","Moldova","p2",2.29
+"65.p3","Moldova","p3",0.41
+"65.p4","Moldova","p4",5.69
+"65.p5","Moldova","p5",2.19
+"65.p6","Moldova","p6",0.13
+"66.p1","Mongolia","p1",7
+"66.p2","Mongolia","p2",4.17
+"66.p3","Mongolia","p3",0.9
+"66.p4","Mongolia","p4",6.63
+"66.p5","Mongolia","p5",4.07
+"66.p6","Mongolia","p6",0.8
+"67.p1","Montenegro","p1",2.77
+"67.p2","Montenegro","p2",0.58
+"67.p3","Montenegro","p3",0.17
+"67.p4","Montenegro","p4",1.52
+"67.p5","Montenegro","p5",1.42
+"67.p6","Montenegro","p6",0
+"68.p1","Morocco","p1",3.75
+"68.p2","Morocco","p2",1.67
+"68.p3","Morocco","p3",0
+"68.p4","Morocco","p4",3.21
+"68.p5","Morocco","p5",0.71
+"68.p6","Morocco","p6",0
+"69.p1","Myanmar","p1",3.11
+"69.p2","Myanmar","p2",0.06
+"69.p3","Myanmar","p3",0.06
+"69.p4","Myanmar","p4",1.33
+"69.p5","Myanmar","p5",0.17
+"69.p6","Myanmar","p6",0
+"70.p1","Nepal","p1",1.8
+"70.p2","Nepal","p2",0.17
+"70.p3","Nepal","p3",0.03
+"70.p4","Nepal","p4",1.17
+"70.p5","Nepal","p5",0.17
+"70.p6","Nepal","p6",0
+"71.p1","Netherlands","p1",6.4
+"71.p2","Netherlands","p2",2.93
+"71.p3","Netherlands","p3",0.53
+"71.p4","Netherlands","p4",6.5
+"71.p5","Netherlands","p5",2.9
+"71.p6","Netherlands","p6",0.5
+"72.p1","New Zealand","p1",5.93
+"72.p2","New Zealand","p2",1.7
+"72.p3","New Zealand","p3",0.3
+"72.p4","New Zealand","p4",4.83
+"72.p5","New Zealand","p5",2.6
+"72.p6","New Zealand","p6",0.03
+"73.p1","Nicaragua","p1",3.83
+"73.p2","Nicaragua","p2",1
+"73.p3","Nicaragua","p3",0
+"73.p4","Nicaragua","p4",2.58
+"73.p5","Nicaragua","p5",0.25
+"73.p6","Nicaragua","p6",0
+"74.p1","Nigeria","p1",1.82
+"74.p2","Nigeria","p2",0.7
+"74.p3","Nigeria","p3",0.08
+"74.p4","Nigeria","p4",0.7
+"74.p5","Nigeria","p5",0.2
+"74.p6","Nigeria","p6",0
+"75.p1","North Macedonia","p1",6.1
+"75.p2","North Macedonia","p2",2.67
+"75.p3","North Macedonia","p3",0.33
+"75.p4","North Macedonia","p4",5.2
+"75.p5","North Macedonia","p5",2.2
+"75.p6","North Macedonia","p6",0.17
+"76.p1","Norway","p1",5.97
+"76.p2","Norway","p2",1.37
+"76.p3","Norway","p3",0.2
+"76.p4","Norway","p4",4.1
+"76.p5","Norway","p5",2.53
+"76.p6","Norway","p6",0.07
+"77.p1","Oman","p1",0.67
+"77.p2","Oman","p2",0.4
+"77.p3","Oman","p3",0.07
+"77.p4","Oman","p4",0.53
+"77.p5","Oman","p5",0.13
+"77.p6","Oman","p6",0
+"78.p1","Pakistan","p1",3.13
+"78.p2","Pakistan","p2",1.17
+"78.p3","Pakistan","p3",0.2
+"78.p4","Pakistan","p4",1.63
+"78.p5","Pakistan","p5",0.4
+"78.p6","Pakistan","p6",0
+"79.p1","Palestine","p1",7
+"79.p2","Palestine","p2",1
+"79.p3","Palestine","p3",0
+"79.p4","Palestine","p4",0
+"79.p5","Palestine","p5",6
+"79.p6","Palestine","p6",0
+"80.p1","Panama","p1",4.67
+"80.p2","Panama","p2",0.22
+"80.p3","Panama","p3",0.23
+"80.p4","Panama","p4",4.27
+"80.p5","Panama","p5",0.25
+"80.p6","Panama","p6",0
+"81.p1","Paraguay","p1",3.82
+"81.p2","Paraguay","p2",0.32
+"81.p3","Paraguay","p3",0
+"81.p4","Paraguay","p4",2.45
+"81.p5","Paraguay","p5",0.5
+"81.p6","Paraguay","p6",0
+"82.p1","Peru","p1",6.67
+"82.p2","Peru","p2",3.93
+"82.p3","Peru","p3",1.03
+"82.p4","Peru","p4",6.27
+"82.p5","Peru","p5",3.47
+"82.p6","Peru","p6",0.57
+"83.p1","Philippines","p1",6.83
+"83.p2","Philippines","p2",2.93
+"83.p3","Philippines","p3",0.47
+"83.p4","Philippines","p4",6.27
+"83.p5","Philippines","p5",3.13
+"83.p6","Philippines","p6",0.03
+"84.p1","Poland","p1",6.73
+"84.p2","Poland","p2",3.73
+"84.p3","Poland","p3",1.17
+"84.p4","Poland","p4",6.8
+"84.p5","Poland","p5",6.1
+"84.p6","Poland","p6",0.93
+"85.p1","Portugal","p1",6.03
+"85.p2","Portugal","p2",2.43
+"85.p3","Portugal","p3",0.17
+"85.p4","Portugal","p4",3.77
+"85.p5","Portugal","p5",2.6
+"85.p6","Portugal","p6",0.1
+"86.p1","Puerto Rico","p1",3.42
+"86.p2","Puerto Rico","p2",0.3
+"86.p3","Puerto Rico","p3",0
+"86.p4","Puerto Rico","p4",1.78
+"86.p5","Puerto Rico","p5",0.4
+"86.p6","Puerto Rico","p6",0
+"87.p1","Romania","p1",6.83
+"87.p2","Romania","p2",5.07
+"87.p3","Romania","p3",2.57
+"87.p4","Romania","p4",6.5
+"87.p5","Romania","p5",4.53
+"87.p6","Romania","p6",1.3
+"88.p1","Russia","p1",6.83
+"88.p2","Russia","p2",4
+"88.p3","Russia","p3",4.08
+"88.p4","Russia","p4",7
+"88.p5","Russia","p5",5.92
+"88.p6","Russia","p6",2.83
+"89.p1","Rwanda","p1",2.54
+"89.p2","Rwanda","p2",0.29
+"89.p3","Rwanda","p3",0.04
+"89.p4","Rwanda","p4",1.62
+"89.p5","Rwanda","p5",0.12
+"89.p6","Rwanda","p6",0
+"90.p1","Saudi Arabia","p1",6.23
+"90.p2","Saudi Arabia","p2",3.23
+"90.p3","Saudi Arabia","p3",0.7
+"90.p4","Saudi Arabia","p4",6.2
+"90.p5","Saudi Arabia","p5",2.9
+"90.p6","Saudi Arabia","p6",0.1
+"91.p1","Serbia","p1",4.97
+"91.p2","Serbia","p2",2.32
+"91.p3","Serbia","p3",0.65
+"91.p4","Serbia","p4",3.88
+"91.p5","Serbia","p5",2.15
+"91.p6","Serbia","p6",0.18
+"92.p1","Singapore","p1",6.93
+"92.p2","Singapore","p2",5.23
+"92.p3","Singapore","p3",1.23
+"92.p4","Singapore","p4",6.6
+"92.p5","Singapore","p5",4.93
+"92.p6","Singapore","p6",0.8
+"93.p1","Slovakia","p1",6.6
+"93.p2","Slovakia","p2",2.9
+"93.p3","Slovakia","p3",0.6
+"93.p4","Slovakia","p4",5.37
+"93.p5","Slovakia","p5",3.43
+"93.p6","Slovakia","p6",0.4
+"94.p1","Slovenia","p1",5.53
+"94.p2","Slovenia","p2",1.63
+"94.p3","Slovenia","p3",0.33
+"94.p4","Slovenia","p4",4.9
+"94.p5","Slovenia","p5",1.7
+"94.p6","Slovenia","p6",0.1
+"95.p1","South Africa","p1",5.77
+"95.p2","South Africa","p2",1.4
+"95.p3","South Africa","p3",0.03
+"95.p4","South Africa","p4",4.8
+"95.p5","South Africa","p5",2
+"95.p6","South Africa","p6",0.07
+"96.p1","South Korea","p1",6.93
+"96.p2","South Korea","p2",5.33
+"96.p3","South Korea","p3",3.93
+"96.p4","South Korea","p4",6.87
+"96.p5","South Korea","p5",5.07
+"96.p6","South Korea","p6",3.13
+"97.p1","Spain","p1",6.37
+"97.p2","Spain","p2",3.23
+"97.p3","Spain","p3",0.2
+"97.p4","Spain","p4",3.97
+"97.p5","Spain","p5",3.8
+"97.p6","Spain","p6",0.2
+"98.p1","Sri Lanka","p1",5.63
+"98.p2","Sri Lanka","p2",0.95
+"98.p3","Sri Lanka","p3",0.1
+"98.p4","Sri Lanka","p4",3.4
+"98.p5","Sri Lanka","p5",1.43
+"98.p6","Sri Lanka","p6",0
+"99.p1","Sweden","p1",5.6
+"99.p2","Sweden","p2",2.33
+"99.p3","Sweden","p3",0.4
+"99.p4","Sweden","p4",4.67
+"99.p5","Sweden","p5",2.63
+"99.p6","Sweden","p6",0.27
+"100.p1","Switzerland","p1",6.03
+"100.p2","Switzerland","p2",2.83
+"100.p3","Switzerland","p3",0.73
+"100.p4","Switzerland","p4",5.5
+"100.p5","Switzerland","p5",2.53
+"100.p6","Switzerland","p6",0.1
+"101.p1","Syria","p1",5.87
+"101.p2","Syria","p2",1.57
+"101.p3","Syria","p3",0.17
+"101.p4","Syria","p4",3.97
+"101.p5","Syria","p5",1.33
+"101.p6","Syria","p6",0
+"102.p1","Taiwan","p1",6.97
+"102.p2","Taiwan","p2",4.67
+"102.p3","Taiwan","p3",1.53
+"102.p4","Taiwan","p4",6.93
+"102.p5","Taiwan","p5",4.87
+"102.p6","Taiwan","p6",0.9
+"103.p1","Tajikistan","p1",4.93
+"103.p2","Tajikistan","p2",1.43
+"103.p3","Tajikistan","p3",0.1
+"103.p4","Tajikistan","p4",4.37
+"103.p5","Tajikistan","p5",1.2
+"103.p6","Tajikistan","p6",0.07
+"104.p1","Tanzania","p1",0.25
+"104.p2","Tanzania","p2",0.88
+"104.p3","Tanzania","p3",0.25
+"104.p4","Tanzania","p4",0.38
+"104.p5","Tanzania","p5",0
+"104.p6","Tanzania","p6",0
+"105.p1","Thailand","p1",6.87
+"105.p2","Thailand","p2",4.77
+"105.p3","Thailand","p3",2.13
+"105.p4","Thailand","p4",6.6
+"105.p5","Thailand","p5",4.5
+"105.p6","Thailand","p6",0.53
+"106.p1","Trinidad and Tobago","p1",2.24
+"106.p2","Trinidad and Tobago","p2",0.07
+"106.p3","Trinidad and Tobago","p3",0.11
+"106.p4","Trinidad and Tobago","p4",1.07
+"106.p5","Trinidad and Tobago","p5",0.53
+"106.p6","Trinidad and Tobago","p6",0
+"107.p1","Tunisia","p1",4.5
+"107.p2","Tunisia","p2",1.53
+"107.p3","Tunisia","p3",0.1
+"107.p4","Tunisia","p4",3.97
+"107.p5","Tunisia","p5",1
+"107.p6","Tunisia","p6",0
+"108.p1","Turkey","p1",6.87
+"108.p2","Turkey","p2",4.27
+"108.p3","Turkey","p3",1.7
+"108.p4","Turkey","p4",7
+"108.p5","Turkey","p5",3.47
+"108.p6","Turkey","p6",0.9
+"109.p1","Turkmenistan","p1",4.96
+"109.p2","Turkmenistan","p2",1.75
+"109.p3","Turkmenistan","p3",0.12
+"109.p4","Turkmenistan","p4",3.96
+"109.p5","Turkmenistan","p5",0.67
+"109.p6","Turkmenistan","p6",0.04
+"110.p1","Uganda","p1",1.41
+"110.p2","Uganda","p2",0.11
+"110.p3","Uganda","p3",0.03
+"110.p4","Uganda","p4",0.98
+"110.p5","Uganda","p5",0.07
+"110.p6","Uganda","p6",0
+"111.p1","Ukraine","p1",6.83
+"111.p2","Ukraine","p2",4.5
+"111.p3","Ukraine","p3",0.9
+"111.p4","Ukraine","p4",6.57
+"111.p5","Ukraine","p5",4.77
+"111.p6","Ukraine","p6",0.9
+"112.p1","United Arab Emirates","p1",1.03
+"112.p2","United Arab Emirates","p2",0.44
+"112.p3","United Arab Emirates","p3",0
+"112.p4","United Arab Emirates","p4",0.89
+"112.p5","United Arab Emirates","p5",0.28
+"112.p6","United Arab Emirates","p6",0
+"113.p1","United Kingdom","p1",7
+"113.p2","United Kingdom","p2",4.57
+"113.p3","United Kingdom","p3",1.7
+"113.p4","United Kingdom","p4",6.67
+"113.p5","United Kingdom","p5",5.9
+"113.p6","United Kingdom","p6",1.03
+"114.p1","United States of America","p1",6.93
+"114.p2","United States of America","p2",5.43
+"114.p3","United States of America","p3",3.63
+"114.p4","United States of America","p4",6.93
+"114.p5","United States of America","p5",6.27
+"114.p6","United States of America","p6",3.1
+"115.p1","Uruguay","p1",5.22
+"115.p2","Uruguay","p2",0.5
+"115.p3","Uruguay","p3",0.1
+"115.p4","Uruguay","p4",2.6
+"115.p5","Uruguay","p5",0.4
+"115.p6","Uruguay","p6",0
+"116.p1","Uzbekistan","p1",5.43
+"116.p2","Uzbekistan","p2",2.37
+"116.p3","Uzbekistan","p3",0.1
+"116.p4","Uzbekistan","p4",4.6
+"116.p5","Uzbekistan","p5",2.53
+"116.p6","Uzbekistan","p6",0
+"117.p1","Venezuela","p1",3.25
+"117.p2","Venezuela","p2",0.15
+"117.p3","Venezuela","p3",0.05
+"117.p4","Venezuela","p4",1.4
+"117.p5","Venezuela","p5",0.37
+"117.p6","Venezuela","p6",0
+"118.p1","Vietnam","p1",6.73
+"118.p2","Vietnam","p2",4.7
+"118.p3","Vietnam","p3",2.67
+"118.p4","Vietnam","p4",6.67
+"118.p5","Vietnam","p5",4
+"118.p6","Vietnam","p6",0.87
