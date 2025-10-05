@@ -1,13 +1,11 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
-  "description": "Dynamic 10-year streamgraph from CSV",
-  "width": 700,
+  "description": "Streamgraph with inverted brown palette",
+  "width": 1000,
   "height": 400,
   "data": {
-    "url": "https://raw.githubusercontent.com/NguKhangWei/FIT3179_DV2/refs/heads/main/data/test_stream.csv",
-    "format": {
-      "type": "csv"
-    }
+    "url": "https://raw.githubusercontent.com/NguKhangWei/FIT3179_DV2/main/data/stream_data_normalized.csv",
+    "format": {"type": "csv"}
   },
   "mark": {
     "type": "area",
@@ -28,7 +26,19 @@
     "color": {
       "field": "category",
       "type": "nominal",
-      "scale": {"scheme": "tableau10"}
+      "scale": {
+        "range": [
+          "#543005",
+          "#723d0d",
+          "#8c510a",
+          "#a6611a",
+          "#c08e54",
+          "#d8b365",
+          "#e5d8a9",
+          "#f6e8c3"
+        ]
+      },
+      "legend": {"title": "Category"}
     }
   }
 }

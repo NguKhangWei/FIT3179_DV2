@@ -40,7 +40,7 @@
   ],
   "mark": {
     "type": "line",
-    "point": true
+    "point": false
   },
   "encoding": {
     "x": {"field": "year", "type": "ordinal", "title": "Year"},
