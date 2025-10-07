@@ -10,11 +10,20 @@ html, body {
 }
 
 /* give each chart its own space */
-#map, #radar {
+#map, #radar, #bump, #line, #box, #stream, #stack, #heat {
     width: 80%;
-    height: 500px;   
-    margin-top: 20px;  
+    min-height: 500px;  
+    height: auto;
+    margin-top: 50px;  
+    display: flex;
+    justify-content: center;
 }
+
+
+#bump, #line, #box{
+  margin-top: 70px;
+}
+
 
 .chart-container {
   display: flex;
@@ -46,4 +55,11 @@ html, body {
     gap: 6px;               /* small spacing between filters */
     margin-top: -30px;   
     margin-left: 60px;
+}
+
+#box {
+    width: 80%;
+    min-height: 500px;
+    height: auto;
+    margin-top: 70px;
 }

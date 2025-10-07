@@ -1,6 +1,14 @@
-{
+const line = {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "IMO performance trends for selected countries (avg team score per student, post-2000, highlighting top 3)",
+  "background": "transparent",
+  "title": {
+    "text": "Average Team Score per Student for Selected Countries (2000 to 2024)",
+    "fontSize": 20,
+    "fontWeight": "bold",
+    "anchor": "middle",
+    "offset": 20
+  },
   "data": {
     "url": "https://raw.githubusercontent.com/NguKhangWei/FIT3179_DV2/main/data/cleaned_country_imo.csv",
     "format": {"type": "csv"}
@@ -68,9 +76,15 @@
       {"field": "team_total", "type": "quantitative"}
     ]
   },
-  "width": "container",
-  "height": 400,
+  "width": 700,
+  "height": 500,
   "config": {
     "legend": {"orient": "right"}
   }
 }
+
+
+
+vegaEmbed("#line", line, { mode: "vega-lite" })
+.then(console.log)
+.catch(console.warn);

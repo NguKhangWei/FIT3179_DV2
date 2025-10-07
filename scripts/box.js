@@ -1,13 +1,19 @@
-{
+const box = {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "Interactive boxplot showing only the selected country with its designated color",
-  "title": {
-    "text": "Top Countries Boxplot Scores (2000-2023)",
+  background: "transparent",
+  "width": 700,
+  "height": 400,
+"autosize": {"type": "pad", "contains": "padding"},
+  "padding": {"bottom": 50},
+    "title": {
+    "text": "Consistency of Competitor Scores by Country (2000-2023)",
     "fontSize": 20,
     "fontWeight": "bold",
-    "anchor": "middle"
+    "anchor": "middle",
+    "color": "#000000",
+    "offset": 10
   },
-  "width": 1000,
   "data": {
     "url": "https://raw.githubusercontent.com/NguKhangWei/FIT3179_DV2/refs/heads/main/data/boxplot_data.csv",
     "format": {"type": "csv"}
@@ -32,14 +38,20 @@
   "transform": [
     {"filter": "datum.country === selectedCountry"}
   ],
-  "mark": {"type": "boxplot", "size": 25, "extent": "min-max"},
+  "mark": {
+    "type": "boxplot",
+    "size": 25,
+    "extent": "min-max",
+    "box": {"stroke": "black"},       
+    "median": {"color": "black"}    
+  },
   "encoding": {
     "x": {"field": "year", "type": "ordinal", "title": "Year"},
     "y": {
-        "field": "normalised_total",
-        "type": "quantitative",
-        "title": "Normalised Score",
-        "scale": {"domain": [0, 1.1]}
+      "field": "normalised_total",
+      "type": "quantitative",
+      "title": "Normalised Score",
+      "scale": {"domain": [0, 1.1]}
     },
     "color": {
       "field": "country",
@@ -54,8 +66,11 @@
         ],
         "range": ["#00CED1", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd"]
       },
-      "legend": {"title": "Country"}
+        "legend": null
     },
-    "stroke" : "black"
   }
-}
+};
+
+vegaEmbed("#box", box, { mode: "vega-lite" })
+  .then(console.log)
+  .catch(console.warn);
