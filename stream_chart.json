@@ -4,7 +4,7 @@
   "width": 1000,
   "height": 400,
   "data": {
-    "url": "https://raw.githubusercontent.com/NguKhangWei/FIT3179_DV2/main/data/stream_data_normalized.csv",
+    "url": "https://raw.githubusercontent.com/NguKhangWei/FIT3179_DV2/main/data/stream_data_normalized_longer.csv",
     "format": {"type": "csv"}
   },
   "mark": {
@@ -28,14 +28,12 @@
       "type": "nominal",
       "scale": {
         "range": [
-          "#543005",
-          "#723d0d",
-          "#8c510a",
-          "#a6611a",
-          "#c08e54",
-          "#d8b365",
-          "#e5d8a9",
-          "#f6e8c3"
+  "#1b728a",  
+  "#4fa37a",  
+  "#9fc96b", 
+  "#3d497d",  
+  "#512b73",  
+  "#e4c84d"   
         ]
       },
       "legend": {"title": "Category"}
