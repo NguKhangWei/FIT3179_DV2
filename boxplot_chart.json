@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "Interactive boxplot showing only the selected country with its designated color",
-  "width": 500,
+  "width": 1000,
   "data": {
     "url": "https://raw.githubusercontent.com/NguKhangWei/FIT3179_DV2/refs/heads/main/data/boxplot_data.csv",
     "format": {"type": "csv"}
@@ -46,9 +46,10 @@
           "Vietnam",
           "Taiwan"
         ],
-        "range": ["#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd"]
+        "range": ["#00CED1", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd"]
       },
       "legend": {"title": "Country"}
-    }
+    },
+    "stroke" : "black"
   }
 }
