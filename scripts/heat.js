@@ -629,7 +629,7 @@ const bronze = {
       "title": "Bronze / Total Awards",
       "scale": {
         "domain": [0, 1],
-        "range": ["#ffcc80", "#fb8c00", "#ef6c00", "#3e2723"]
+        "range": ["#fb8c00", "#e65100", "#bf360c", "#1b0d09"]
       }
     },
     "tooltip": [
