@@ -79,7 +79,7 @@ const line = {
   "width": 700,
   "height": 500,
   "config": {
-    "legend": {"orient": "right"}
+    "legend": {"orient": "top-center" },
   }
 }
 

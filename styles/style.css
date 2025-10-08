@@ -20,7 +20,7 @@ html, body {
 }
 
 
-#bump, #line, #box{
+#bump, #line, #box, #stacked, #stream {
   margin-top: 70px;
 }
 
@@ -39,6 +39,18 @@ html, body {
   flex-direction: column;
   align-items: center;  
   justify-content: center;
+}
+
+#heat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 80%;
+    min-height: 500px;
+    height: auto;
+    margin-top: 70px;  
 }
 
 
