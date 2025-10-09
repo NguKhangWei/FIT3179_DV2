@@ -2,7 +2,7 @@ const stream = {
   "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
   "description": "Streamgraph with inverted brown palette",
   background: "transparent",
-  "width": 700,
+  "width": 1000,
   "height": 400,
   "title": {
     "text": "Trend in each IMO Problem Performance (1981 to 2024)",
@@ -44,7 +44,7 @@ const stream = {
   "#e4c84d"   
         ]
       },
-      "legend": {"title": "Category"}
+      "legend": {"title": "Category", orient : "top"}
     },
     "config": {
     "view": {"stroke": "transparent"}  // <--- removes the outer grid/frame

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IMO Participation by Country</title>
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.20.8"></script>
+  <script src="scripts/map.js" defer></script>
+  <script src="scripts/radar.js" defer></script>
+  <script src="scripts/bump.js" defer></script>
+  <script src="scripts/line.js" defer></script>
+  <script src="scripts/box.js" defer></script>
+  <script src="scripts/stacked.js" defer></script>
+  <script src="scripts/stream.js" defer></script>
+  <script src="scripts/heat.js" defer></script>
+
+  <link rel="stylesheet" href="styles/style2.css">
+</head>
+<body>
+  <div class="chart-container">
+    <div class="chart-row"><div id="map"></div></div>
+    <div class="chart-row">
+    <div class="chart-half"><div id="bump"></div></div>
+    <!-- <div class="chart-text"><h2>Bump Chart</h2><p>Short description here...</p></div> -->
+    </div>
+
+    <div class="chart-row-two">
+  <!-- Radar column -->
+    <div class="chart-col">
+        <div id="radar" class="chart-half"></div>
+        <div class="chart-text">
+        <h2>Radar Chart Explanation</h2>
+        <p>
+            Explanation for the radar chart goes here. Highlight key findings and insights.
+        </p>
+        </div>
+    </div>
+
+    <!-- Stacked column -->
+    <div class="chart-col">
+        <div id="stacked" class="chart-half"></div>
+        <div class="chart-text">
+        <h2>Stacked Chart Explanation</h2>
+        <p>
+            Explanation for the stacked chart goes here. Mention important comparisons or trends.
+        </p>
+        </div>
+    </div>
+    </div>
+
+    <div class="chart-row">
+    <div class="chart-half"><div id="line"></div></div>
+    <!-- <div class="chart-text"><h2>Line Chart</h2><p>Explanation here...</p></div> -->
+    </div>
+
+    
+    <div class="chart-row">
+    <div class="chart-half"><div id="box"></div></div>
+    <!-- <div class="chart-text"><h2>Box Plot</h2><p>Insights...</p></div> -->
+    </div>
+
+    <div class="chart-row">
+    <div class="chart-half"><div id="stream"></div></div>
+    <!-- <div class="chart-text"><h2>Box Plot</h2><p>Insights...</p></div> -->
+    </div>
+
+    <div class="chart-row">
+    <div id="gold"></div> 
+    <div id="silver"></div> 
+    <div id="bronze"></div> 
+    <!-- <div class="chart-text"><h2>Box Plot</h2><p>Insights...</p></div> -->
+    </div>
+
+</body>
+</html>

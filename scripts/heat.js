@@ -2,7 +2,7 @@ const gold = {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "Gold Award Ratio (Gold / All Awards) by Continent (2000–2024)",
   background: "transparent",
-  "width": 800,
+  "width": 500,
   "height": {"step": 20},
   "data": {
     "url": "https://raw.githubusercontent.com/NguKhangWei/FIT3179_DV2/main/data/cleaned_country_imo.csv",
@@ -217,7 +217,7 @@ const silver = {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "Silver Award Ratio (Silver / All Awards) by Continent (2000–2024)",
   background: "transparent",
-  "width": 800,
+  "width": 500,
   "height": {"step": 20},
   "data": {
     "url": "https://raw.githubusercontent.com/NguKhangWei/FIT3179_DV2/main/data/cleaned_country_imo.csv",
@@ -433,7 +433,7 @@ const bronze = {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "Bronze Award Ratio (Bronze / All Awards) by Continent (2000–2024)",
   background: "transparent",
-  "width": 800,
+  "width": 500,
   "height": {"step": 20},
   "data": {
     "url": "https://raw.githubusercontent.com/NguKhangWei/FIT3179_DV2/main/data/cleaned_country_imo.csv",
