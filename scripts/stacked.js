@@ -4,7 +4,7 @@ const stacked = {
   "background": "transparent",
   "title": "Proportion of Male and Female IMO Participants (2000 to 2024)",
   "width": 500,
-  "height": 465,
+  "height": "container",
   "data": {
     "url": "https://raw.githubusercontent.com/NguKhangWei/FIT3179_DV2/main/data/cleaned_country_imo.csv",
     "format": {"type": "csv"}

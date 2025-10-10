@@ -76,8 +76,8 @@ const line = {
       {"field": "team_total", "type": "quantitative"}
     ]
   },
-  "width": 1000,
-  "height": 500,
+  "width": "container",
+  "height": "container",
   "config": {
     "legend": {"orient": "top-center" },
   }

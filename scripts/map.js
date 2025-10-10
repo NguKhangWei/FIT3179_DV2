@@ -2,8 +2,8 @@ const map = {
       "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
       "title": "International Math Olympiad Participation Count by Country (1959 to 2024)",
       background: "transparent",
-      "width": "800",
-      "height": "500",
+      "width": "container",
+      "height": "container",
       "projection": { "type": "equalEarth" },
       "layer": [
         {

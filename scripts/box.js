@@ -2,7 +2,7 @@ const box = {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "Interactive boxplot showing only the selected country with its designated color",
   background: "transparent",
-  "width": 1000,
+  "width": "container",
   "height": 400,
 "autosize": {"type": "pad", "contains": "padding"},
   "padding": {"bottom": 50},

@@ -3,7 +3,7 @@ const radar ={
     "title": "Top 10 Countries IMO Performance (2020 to 2024)",
   "description": "Radar chart with country dropdown and year slider",
   "width": 500,
-  "height": 500,
+  "height": 480,
   "autosize": {"type": "fit", "contains": "padding"},
 
   "signals": [

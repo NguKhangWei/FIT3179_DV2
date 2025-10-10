@@ -2,8 +2,8 @@ const stream = {
   "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
   "description": "Streamgraph with inverted brown palette",
   background: "transparent",
-  "width": 1000,
-  "height": 400,
+  "width": "container",
+  "height": "container",
   "title": {
     "text": "Trend in each IMO Problem Performance (1981 to 2024)",
     "fontSize": 20,

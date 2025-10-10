@@ -9,8 +9,8 @@ const bump = {
     "anchor": "middle",
     "offset": 20
   },
-  "width": 1000,
-  "height": 400,
+  "width": "container",
+  "height": "container",
   "data": {
     "url": "https://raw.githubusercontent.com/NguKhangWei/FIT3179_DV2/main/data/cleaned_country_imo.csv",
     "format": {"type": "csv"}

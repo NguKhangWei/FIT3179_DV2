@@ -1,8 +1,7 @@
 const gold = {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Gold Award Ratio (Gold / All Awards) by Continent (2000–2024)",
   background: "transparent",
-  "width": 500,
+  "width": 440,
   "height": {"step": 20},
   "data": {
     "url": "https://raw.githubusercontent.com/NguKhangWei/FIT3179_DV2/main/data/cleaned_country_imo.csv",
@@ -194,12 +193,18 @@ const gold = {
     },
     "color": {
       "field": "gold_ratio",
-  "type": "quantitative",
-  "title": "Gold / Total Awards",
-  "scale": {
-    "domain": [0, 1],
-    "range": ["#fbc02d", "#f57f17", "#e65100", "#4e342e"]
-  }
+      "type": "quantitative",
+      "title": "Gold Proportion",
+      "scale": {
+        "domain": [0, 1],
+        "range": ["#fbc02d", "#f57f17", "#e65100", "#4e342e"]
+      },
+      "legend": {
+        "orient": "top-left",
+        "direction": "horizontal",
+        "titleOrient": "left",
+        "offset": -30
+      }
     },
     "tooltip": [
       {"field": "year", "type": "ordinal"},
@@ -215,9 +220,9 @@ const gold = {
 
 const silver = {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Silver Award Ratio (Silver / All Awards) by Continent (2000–2024)",
+  // "title": "Silver Award Ratio by Continent (2000 to 2024)",
   background: "transparent",
-  "width": 500,
+  "width": 450,
   "height": {"step": 20},
   "data": {
     "url": "https://raw.githubusercontent.com/NguKhangWei/FIT3179_DV2/main/data/cleaned_country_imo.csv",
@@ -398,22 +403,28 @@ const silver = {
     "x": {
       "field": "year",
       "type": "ordinal",
-      "title": "Year",
+      "title": null,
       "axis": {"labelAngle": -45}
     },
     "y": {
       "field": "continent",
       "type": "nominal",
-      "title": "Continent",
+      "title": null,
       "sort": ["Asia", "Europe", "North America", "South America", "Oceania"]
     },
     "color": {
       "field": "silver_ratio",
       "type": "quantitative",
-      "title": "Silver / Total Awards",
+      "title": "Silver Proportion",
       "scale": {
         "domain": [0, 1],
         "range": ["#e0e0e0", "#9e9e9e", "#616161", "#212121"]
+      },
+      "legend": {
+        "orient": "top-left",
+        "direction": "horizontal",
+        "titleOrient": "left",
+        "offset": -30
       }
     },
     "tooltip": [
@@ -431,9 +442,9 @@ const silver = {
 
 const bronze = {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Bronze Award Ratio (Bronze / All Awards) by Continent (2000–2024)",
+  "title": null,
   background: "transparent",
-  "width": 500,
+  "width": 450,
   "height": {"step": 20},
   "data": {
     "url": "https://raw.githubusercontent.com/NguKhangWei/FIT3179_DV2/main/data/cleaned_country_imo.csv",
@@ -614,22 +625,28 @@ const bronze = {
     "x": {
       "field": "year",
       "type": "ordinal",
-      "title": "Year",
+      "title": null,
       "axis": {"labelAngle": -45}
     },
     "y": {
       "field": "continent",
       "type": "nominal",
-      "title": "Continent",
+      "title": null,
       "sort": ["Asia", "Europe", "North America", "South America", "Oceania"]
     },
     "color": {
       "field": "bronze_ratio",
       "type": "quantitative",
-      "title": "Bronze / Total Awards",
+      "title": "Bronze Proportion",
       "scale": {
         "domain": [0, 1],
         "range": ["#fb8c00", "#e65100", "#bf360c", "#1b0d09"]
+      },
+      "legend": {
+        "orient": "top-left",
+        "direction": "horizontal",
+        "titleOrient": "left",
+        "offset": -30
       }
     },
     "tooltip": [
