@@ -14,6 +14,11 @@ html, body {
   box-sizing: border-box;
 }
 
+h1{
+  text-align: center;
+  background-color: #d4d4d4;
+}
+
 /* MAIN container — controls content width & centering */
 .chart-container {
   width: 80%;               /* change this if you want wider/narrower content */
