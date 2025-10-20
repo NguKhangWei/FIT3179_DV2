@@ -34,7 +34,7 @@ const stacked = {
     "color": {
       "field": "gender",
       "type": "nominal",
-      "scale": {"domain": ["male", "female"], "range": ["#1f77b4", "#ff7f0e"]},
+      "scale": {"domain": ["male", "female"], "range": ["#5b9ccaff", "#df8537ff"]},
       "title": "Gender",
       "legend": {"orient": "left", "offset": -100}
     }

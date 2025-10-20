@@ -185,7 +185,7 @@ const radar ={
     }
   ],
   "config": {
-        "title": { "fontSize": 16, "anchor": "middle", "fontWeight": "bold", "offset": -30},
+        "title": { "fontSize": 16, "anchor": "middle", "fontWeight": "bold", "offset": -22},
     }
 }
 

@@ -188,7 +188,7 @@ const gold = {
     "y": {
       "field": "continent",
       "type": "nominal",
-      "title": "Continent",
+      "title": null,
       "sort": ["Asia", "Europe", "North America", "South America", "Oceania"]
     },
     "color": {
@@ -410,7 +410,12 @@ const silver = {
       "field": "continent",
       "type": "nominal",
       "title": null,
-      "sort": ["Asia", "Europe", "North America", "South America", "Oceania"]
+      "sort": ["Asia", "Europe", "North America", "South America", "Oceania"],
+      "axis": {
+        "labels": false,   
+        "ticks": false,   
+        "domain": false    
+      }
     },
     "color": {
       "field": "silver_ratio",

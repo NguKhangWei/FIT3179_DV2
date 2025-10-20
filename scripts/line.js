@@ -4,7 +4,7 @@ const line = {
   "background": "transparent",
   "title": {
     "text": "Average Team Score per Student for Selected Countries (2000 to 2024)",
-    "fontSize": 20,
+    "fontSize": 16,
     "fontWeight": "bold",
     "anchor": "middle",
     "offset": 20
@@ -53,8 +53,8 @@ const line = {
       },
       "mark": {
         "type": "rule",
-        "color": "grey",
-        "strokeWidth": 2
+        "color": "black",
+        "strokeWidth": 1
       },
       "encoding": {
         "x": { "field": "year", "type": "ordinal" },
@@ -68,8 +68,8 @@ const line = {
       },
       "mark": {
         "type": "rule",
-        "color": "grey",
-        "strokeWidth": 2
+        "color": "black",
+        "strokeWidth": 1
       },
       "encoding": {
         "x": { "field": "year", "type": "ordinal" },
@@ -77,21 +77,21 @@ const line = {
         "y2": { "value": 120 }  // set this to roughly the max of your y-axis
       }
     },
-    {
-      "data": {
-        "values": [{"year": "2020"}]
-      },
-      "mark": {
-        "type": "rule",
-        "color": "black",
-        "strokeWidth": 1
-      },
-      "encoding": {
-        "x": { "field": "year", "type": "ordinal" },
-        "y": { "value": 0 },
-        "y2": { "value": 400 }  // set this to roughly the max of your y-axis
-      }
-    },
+    // {
+    //   "data": {
+    //     "values": [{"year": "2020"}]
+    //   },
+    //   "mark": {
+    //     "type": "rule",
+    //     "color": "black",
+    //     "strokeWidth": 1
+    //   },
+    //   "encoding": {
+    //     "x": { "field": "year", "type": "ordinal" },
+    //     "y": { "value": 0 },
+    //     "y2": { "value": 400 }  // set this to roughly the max of your y-axis
+    //   }
+    // },
     {
       "mark": { "type": "line", "point": false },
       "encoding": {

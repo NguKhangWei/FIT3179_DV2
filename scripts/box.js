@@ -8,7 +8,7 @@ const box = {
   "padding": {"bottom": 50},
   "title": {
     "text": "Consistency of Competitor Scores by Country (2000-2023)",
-    "fontSize": 20,
+    "fontSize": 16,
     "fontWeight": "bold",
     "anchor": "middle",
     "color": "#000000",
@@ -32,6 +32,49 @@ const box = {
     }
   ],
   "layer": [
+{
+  // Line annotation (only shows for China)
+  "data": {
+    "values": [
+      {"country": "People's Republic of China", "year": "2022"}
+    ]
+  },
+  "transform": [
+    {"filter": "datum.country === selectedCountry"}
+  ],
+  "mark": {
+    "type": "rule",
+    "color": "black",
+    "strokeWidth": 1
+  },
+  "encoding": {
+    "x": { "field": "year", "type": "ordinal" },
+    "y": { "value": 50 },
+    "y2": { "value": 80 }  // roughly the max of your y-axis
+  }
+},    
+    {
+  // Line annotation (only shows for China)
+  "data": {
+    "values": [
+      {"country": "United States of America", "year": "2022"}
+    ]
+  },
+  "transform": [
+    {"filter": "datum.country === selectedCountry"}
+  ],
+  "mark": {
+    "type": "rule",
+    "color": "black",
+    "strokeWidth": 1
+  },
+  "encoding": {
+    "x": { "field": "year", "type": "ordinal" },
+    "y": { "value": 200 },
+    "y2": { "value": 240 }  // roughly the max of your y-axis
+  }
+},
+
     {
       // Boxplot layer
       "data": {
@@ -77,8 +120,9 @@ const box = {
       // Annotation layer
       "data": {
         "values": [
-          {"country": "United States of America", "text": "Some inconsistent", "year": 2021, "y_custom": 0.3},
-          {"country": "United States of America", "text": "years is to be expected", "year": 2021, "y_custom": 0.25},
+          {"country": "Republic of Korea", "text": "Earlier years show very large", "year": 2021, "y_custom": 0.3},
+          {"country": "Republic of Korea", "text": "gap, indicating a clear skill", "year": 2021, "y_custom": 0.25},
+          {"country": "Republic of Korea", "text": "difference among team mates", "year": 2021, "y_custom": 0.2},
 
         ]
       },
@@ -87,8 +131,89 @@ const box = {
       ],
       "mark": {
         "type": "text",
-        "dx": 800,
-        "dy": -50,
+        "dx": 200,
+        "dy": -10,
+        "fontSize": 12,
+        "fontStyle": "italic",
+        "color": "black"
+      },
+      "encoding": {
+        "x": {"field": "year", "type": "ordinal"},
+        "y": {"field": "y_custom", "type": "quantitative"},
+        "text": {"field": "text"}
+      }
+    },
+        {
+      // Annotation layer
+      "data": {
+        "values": [
+          {"country": "Republic of Korea", "text": "Later years show improved", "year": 2021, "y_custom": 0.3},
+          {"country": "Republic of Korea", "text": "consistency, reflecting", "year": 2021, "y_custom": 0.25},
+          {"country": "Republic of Korea", "text": "lessons learned", "year": 2021, "y_custom": 0.2},
+
+        ]
+      },
+      "transform": [
+        {"filter": "datum.country === selectedCountry"}
+      ],
+      "mark": {
+        "type": "text",
+        "dx": 700,
+        "dy": -10,
+        "fontSize": 12,
+        "fontStyle": "italic",
+        "color": "black"
+      },
+      "encoding": {
+        "x": {"field": "year", "type": "ordinal"},
+        "y": {"field": "y_custom", "type": "quantitative"},
+        "text": {"field": "text"}
+      }
+    },
+    {
+      // Annotation layer
+      "data": {
+        "values": [
+          {"country": "United States of America", "text": "Some years show inconsistencies", "year": 2021, "y_custom": 0.3},
+          {"country": "United States of America", "text": "but the USA remains largely", "year": 2021, "y_custom": 0.25},
+          {"country": "United States of America", "text": "consistent throughout", "year": 2021, "y_custom": 0.2},
+
+        ]
+      },
+      "transform": [
+        {"filter": "datum.country === selectedCountry"}
+      ],
+      "mark": {
+        "type": "text",
+        "dx": 550,
+        "dy": -30,
+        "fontSize": 12,
+        "fontStyle": "italic",
+        "color": "black"
+      },
+      "encoding": {
+        "x": {"field": "year", "type": "ordinal"},
+        "y": {"field": "y_custom", "type": "quantitative"},
+        "text": {"field": "text"}
+      }
+    },
+        {
+      // Annotation layer
+      "data": {
+        "values": [
+          {"country": "United States of America", "text": "2022 shows the widest gap,", "year": 2021, "y_custom": 0.3},
+          {"country": "United States of America", "text": "though still narrower than", "year": 2021, "y_custom": 0.25},
+          {"country": "United States of America", "text": "China’s widest gap", "year": 2021, "y_custom": 0.2},
+
+        ]
+      },
+      "transform": [
+        {"filter": "datum.country === selectedCountry"}
+      ],
+      "mark": {
+        "type": "text",
+        "dx": 870,
+        "dy": -30,
         "fontSize": 12,
         "fontStyle": "italic",
         "color": "black"
@@ -116,6 +241,31 @@ const box = {
         "type": "text",
         "dx": 200,
         "dy": -50,
+        "fontSize": 12,
+        "fontStyle": "italic",
+        "color": "black"
+      },
+      "encoding": {
+        "x": {"field": "year", "type": "ordinal"},
+        "y": {"field": "y_custom", "type": "quantitative"},
+        "text": {"field": "text"}
+      }
+    },
+    {
+      // Annotation layer
+      "data": {
+        "values": [
+          {"country": "Taiwan", "text": "No clear trend — stable years were", "year": 2017, "y_custom": 0.3},
+          {"country": "Taiwan", "text": "steady, volatile years were erratic", "year" : 2017, "y_custom": 0.25},
+        ]
+      },
+      "transform": [
+        {"filter": "datum.country === selectedCountry"}
+      ],
+      "mark": {
+        "type": "text",
+        "dx": 550,
+        "dy": 10,
         "fontSize": 12,
         "fontStyle": "italic",
         "color": "black"
@@ -184,7 +334,9 @@ const box = {
       // Annotation layer
       "data": {
         "values": [
-          {"country": "Vietnam", "text": "Noticeable drop in score", "year": 2017, "y_custom": 0.7}
+          {"country": "Vietnam", "text": "Discrepancy peaked", "year": 2017, "y_custom": 0.7},
+          {"country": "Vietnam", "text": "in 2020, possibly", "year": 2017, "y_custom": 0.65},
+          {"country": "Vietnam", "text": "pandemic-related", "year": 2017, "y_custom": 0.6}
         ]
       },
       "transform": [
@@ -192,8 +344,8 @@ const box = {
       ],
       "mark": {
         "type": "text",
-        "dx": 10,
-        "dy": -5,
+        "dx": 590,
+        "dy": 100,
         "fontSize": 12,
         "fontStyle": "italic",
         "color": "black"
