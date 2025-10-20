@@ -38,6 +38,7 @@ const bump = {
           "field": "year", 
           "type": "ordinal",
           "axis": {
+            "title": "Year",
             "labelAngle": 0,
             "labelPadding": 10,
             "grid": false,
@@ -59,24 +60,114 @@ const bump = {
         "color": {
           "field": "country_new",
           "type": "nominal",
-          "legend": null   // remove legend
+          "legend": null,
+          "scale": {
+            "domain": ["United States of America", "China", "South Korea", "Germany", "India"],
+            "range": ["#CC79A7", "#008080", "cyan", "brown", "orange"]  // your desired colors
+          },
         },
         "detail": {"field": "country_new"}
       }
     },
+    // {
+    //   "mark": {"type": "text", "align": "left", "dx": 10, "fontSize": 12},
+    //   "encoding": {
+    //     "x": {"field": "year", "type": "ordinal"},
+    //     "y": {"field": "rank", "type": "quantitative"},
+    //     "text": {"field": "country_new"},
+    //     "color": {"field": "country_new"},
+    //     "detail": {"field": "country_new"}
+    //   },
+    //   "transform": [
+    //     {"filter": "datum.year == 2024"}  // only label the last year
+    //   ]
+    // }
     {
-      "mark": {"type": "text", "align": "left", "dx": 10, "fontSize": 12},
-      "encoding": {
-        "x": {"field": "year", "type": "ordinal"},
-        "y": {"field": "rank", "type": "quantitative"},
-        "text": {"field": "country_new"},
-        "color": {"field": "country_new"},
-        "detail": {"field": "country_new"}
-      },
-      "transform": [
-        {"filter": "datum.year == 2024"}  // only label the last year
-      ]
-    }
+  "mark": {"type": "text", "align": "left", "dx": -10, "fontSize": 12, "fontWeight": "bold"},
+  "transform": [
+    {"filter": "datum.year == 2024 && datum.country_new == 'China'"},
+    {"calculate": "datum.rank + 0.2", "as": "y_label"}
+  ],
+  "encoding": {
+    "x": {"field": "year", "type": "ordinal"},
+    "y": {"field": "y_label", "type": "quantitative"},
+    "text": {"field": "country_new"}
+  }
+},
+{
+  "mark": {"type": "text", "align": "left", "dx": -10, "fontSize": 12, "fontWeight": "bold"},
+  "transform": [
+    {"filter": "datum.year == 2024 && datum.country_new == 'United States of America'"},
+    {"calculate": "datum.rank + 0.2", "as": "y_label"},
+    {"calculate": "'USA'", "as": "label_text"} 
+  ],
+  "encoding": {
+    "x": {"field": "year", "type": "ordinal"},
+    "y": {"field": "y_label", "type": "quantitative"},
+    "text": {"field": "label_text"}
+  }
+},
+{
+  "mark": {"type": "text", "align": "left", "dx": -80, "dy": -30, "fontSize": 12, "fontWeight": "bold"},
+  "transform": [
+    {"filter": "datum.year == 2024 && datum.country_new == 'South Korea'"},
+    {"calculate": "datum.rank + 0.2", "as": "y_label"}
+  ],
+  "encoding": {
+    "x": {"field": "year", "type": "ordinal"},
+    "y": {"field": "y_label", "type": "quantitative"},
+    "text": {"field": "country_new"}
+  }
+},
+{
+  "mark": {"type": "text", "align": "left", "dx": -80, "dy": -30, "fontSize": 12, "fontWeight": "bold"},
+  "transform": [
+    {"filter": "datum.year == 2024 && datum.country_new == 'Germany'"},
+    {"calculate": "datum.rank + 0.2", "as": "y_label"}
+  ],
+  "encoding": {
+    "x": {"field": "year", "type": "ordinal"},
+    "y": {"field": "y_label", "type": "quantitative"},
+    "text": {"field": "country_new"}
+  }
+},
+{
+  "mark": {"type": "text", "align": "left", "dx": -80, "dy": -30, "fontSize": 12, "fontWeight": "bold"},
+  "transform": [
+    {"filter": "datum.year == 2024 && datum.country_new == 'India'"},
+    {"calculate": "datum.rank + 0.2", "as": "y_label"}
+  ],
+  "encoding": {
+    "x": {"field": "year", "type": "ordinal"},
+    "y": {"field": "y_label", "type": "quantitative"},
+    "text": {"field": "country_new"}
+  }
+},
+{
+  "data": {
+    "values": [
+      {"text": "USA team faced difficulties", "year": 2017, "y_custom": 6},
+      {"text": "due to the extremely", "year": 2017, "y_custom": 6.2},
+      {"text": "challenging year for IMO", "year": 2017, "y_custom": 6.4}
+    ]
+  },
+  "mark": {
+    "type": "text",
+    "dx": 350,
+    "dy": -270,
+    "fontSize": 12,
+    "fontStyle": "italic",
+    "color": "black"
+  },
+  "encoding": {
+    "x": {"field": "year", "type": "ordinal"},
+    "y": {"field": "y_custom", "type": "quantitative"},
+    "text": {"field": "text"}
+  }
+}
+
+
+
   ],
   "config": {
     "axis": {"labelFontSize": 12, "titleFontSize": 14}
