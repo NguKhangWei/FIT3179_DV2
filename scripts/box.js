@@ -7,7 +7,7 @@ const box = {
   "autosize": {"type": "pad", "contains": "padding"},
   "padding": {"bottom": 50},
   "title": {
-    "text": "Consistency of Competitor Scores by Country (2000 to 2023)",
+    "text": "Consistency of Competitor Scores by Country (2000 to 2024)",
     "fontSize": 18,
     "fontWeight": "bold",
     "anchor": "middle",
