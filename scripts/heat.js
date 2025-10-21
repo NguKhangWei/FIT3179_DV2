@@ -156,6 +156,7 @@ const gold = {
         "fields": ["continent"]
       }
     },
+    // Filter data for the heatmap
     {"filter": "datum.continent != null"},
     {"filter": "datum.continent != 'Africa'"},
     {"filter": "datum.year >= 2000 && datum.year <= 2024"},
@@ -163,13 +164,12 @@ const gold = {
       "aggregate": [
         {"op": "sum", "field": "awards_gold", "as": "total_gold"},
         {"op": "sum", "field": "awards_silver", "as": "total_silver"},
-        {"op": "sum", "field": "awards_bronze", "as": "total_bronze"},
-        {"op": "sum", "field": "awards_honorable_mentions", "as": "total_hm"}
+        {"op": "sum", "field": "awards_bronze", "as": "total_bronze"}
       ],
       "groupby": ["year", "continent"]
     },
     {
-      "calculate": "datum.total_gold + datum.total_silver + datum.total_bronze + datum.total_hm",
+      "calculate": "datum.total_gold + datum.total_silver + datum.total_bronze",
       "as": "total_awards"
     },
     {
@@ -177,7 +177,8 @@ const gold = {
       "as": "gold_ratio"
     }
   ],
-  "mark": "rect",
+  "mark": "rect", // Rectangle mark
+  // For how to draw the heatmap
   "encoding": {
     "x": {
       "field": "year",
@@ -384,13 +385,12 @@ const silver = {
       "aggregate": [
         {"op": "sum", "field": "awards_gold", "as": "total_gold"},
         {"op": "sum", "field": "awards_silver", "as": "total_silver"},
-        {"op": "sum", "field": "awards_bronze", "as": "total_bronze"},
-        {"op": "sum", "field": "awards_honorable_mentions", "as": "total_hm"}
+        {"op": "sum", "field": "awards_bronze", "as": "total_bronze"}
       ],
       "groupby": ["year", "continent"]
     },
     {
-      "calculate": "datum.total_gold + datum.total_silver + datum.total_bronze + datum.total_hm",
+      "calculate": "datum.total_gold + datum.total_silver + datum.total_bronze",
       "as": "total_awards"
     },
     {
@@ -611,13 +611,12 @@ const bronze = {
       "aggregate": [
         {"op": "sum", "field": "awards_gold", "as": "total_gold"},
         {"op": "sum", "field": "awards_silver", "as": "total_silver"},
-        {"op": "sum", "field": "awards_bronze", "as": "total_bronze"},
-        {"op": "sum", "field": "awards_honorable_mentions", "as": "total_hm"}
+        {"op": "sum", "field": "awards_bronze", "as": "total_bronze"}
       ],
       "groupby": ["year", "continent"]
     },
     {
-      "calculate": "datum.total_gold + datum.total_silver + datum.total_bronze + datum.total_hm",
+      "calculate": "datum.total_gold + datum.total_silver + datum.total_bronze",
       "as": "total_awards"
     },
     {

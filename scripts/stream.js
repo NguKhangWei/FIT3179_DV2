@@ -12,16 +12,14 @@ const stream = {
     "offset": 20
   },
 
-  // LAYERED STRUCTURE
   "layer": [
-    // --- MAIN STREAMGRAPH ---
     {
       "data": {
         "url": "https://raw.githubusercontent.com/NguKhangWei/FIT3179_DV2/main/data/stream_data_normalized_longer.csv",
         "format": {"type": "csv"}
       },
       "mark": {
-        "type": "area",
+        "type": "area", //Layer for each category
         "interpolate": "monotone"
       },
       "encoding": {
@@ -54,22 +52,7 @@ const stream = {
       }
     },
 
-    // --- LINE ANNOTATION ---
-    // {
-    //   "data": {
-    //     "values": [{"year": "2017"}]
-    //   },
-    //   "mark": {
-    //     "type": "rule",
-    //     "color": "black",
-    //     "strokeWidth": 1,
-    //     "strokeDash": [4, 2]
-    //   },
-    //   "encoding": {
-    //     "x": {"field": "year", "type": "ordinal"}
-    //   }
-    // },
-    {
+    {// Line annotation
       "data": {
         "values": [{"year": "2017"}]
       },
@@ -81,10 +64,10 @@ const stream = {
       "encoding": {
         "x": { "field": "year", "type": "ordinal" },
         "y": { "value": 50 },
-        "y2": { "value": 200 }  // set this to roughly the max of your y-axis
+        "y2": { "value": 200 }  
       }
     },
-        {
+    {// Line annotation
       "data": {
         "values": [{"year": "2006"}]
       },
@@ -100,8 +83,7 @@ const stream = {
       }
     },
 
-    // --- TEXT ANNOTATION ---
-    {
+    {// Text annotation
   "data": {
     "values": [
       {"text": "Problem 3 scores declined steadily,", "year": 2007, "y_custom": 8},
@@ -123,7 +105,7 @@ const stream = {
     "text": {"field": "text"}
   }
 },
-{
+{// Text annotation
   "data": {
     "values": [
       {"text": "Problem 6 performance dropped sharply", "year": 2007, "y_custom": 8},
@@ -144,34 +126,8 @@ const stream = {
     "text": {"field": "text"}
   }
 }
-    // {
-    //   "data": {
-    //     "values": [
-    //       {
-    //         "year": "2017",
-    //         "y_custom": 0.35,
-    //         "text": "Sharp drop — very tough IMO year"
-    //       }
-    //     ]
-    //   },
-    //   "mark": {
-    //     "type": "text",
-    //     "align": "left",
-    //     "baseline": "bottom",
-    //     "dx": 5,
-    //     "dy": -5,
-    //     "fontSize": 12,
-    //     "fontStyle": "italic"
-    //   },
-    //   "encoding": {
-    //     "x": {"field": "year", "type": "ordinal"},
-    //     "y": {"field": "y_custom", "type": "quantitative"},
-    //     "text": {"field": "text"}
-    //   }
-    // }
   ],
 
-  // REMOVE OUTER FRAME
   "config": {
     "view": {"stroke": "transparent"}
   }

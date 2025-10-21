@@ -14,18 +14,18 @@ const line = {
     "format": {"type": "csv"}
   },
   "transform": [
-    {
+    {// Sum of all question points
       "calculate": "toNumber(datum.p1) + toNumber(datum.p2) + toNumber(datum.p3) + toNumber(datum.p4) + toNumber(datum.p5) + toNumber(datum.p6)",
       "as": "team_total"
     },
-    {
+    {// Normalisation
       "calculate": "datum.team_total / toNumber(datum.team_size_all)",
       "as": "avg_score"
     },
-    {
+    {// Only for years 2000 and above
       "filter": "toNumber(datum.year) >= 2000"
     },
-    {
+    {// Only for these countries
       "filter": {
         "field": "country_new",
         "oneOf": [
@@ -47,6 +47,7 @@ const line = {
     }
   ],
   "layer": [
+    // Line annotation
     {
       "data": {
         "values": [{"year": "2017"}]
@@ -59,10 +60,11 @@ const line = {
       "encoding": {
         "x": { "field": "year", "type": "ordinal" },
         "y": { "value": 275 },
-        "y2": { "value": 300 }  // set this to roughly the max of your y-axis
+        "y2": { "value": 300 }  
       }
     },
-        {
+    // Line annotation
+      {
       "data": {
         "values": [{"year": "2007"}]
       },
@@ -74,31 +76,17 @@ const line = {
       "encoding": {
         "x": { "field": "year", "type": "ordinal" },
         "y": { "value": 70 },
-        "y2": { "value": 120 }  // set this to roughly the max of your y-axis
+        "y2": { "value": 120 }  
       }
     },
-    // {
-    //   "data": {
-    //     "values": [{"year": "2020"}]
-    //   },
-    //   "mark": {
-    //     "type": "rule",
-    //     "color": "black",
-    //     "strokeWidth": 1
-    //   },
-    //   "encoding": {
-    //     "x": { "field": "year", "type": "ordinal" },
-    //     "y": { "value": 0 },
-    //     "y2": { "value": 400 }  // set this to roughly the max of your y-axis
-    //   }
-    // },
-    {
-      "mark": { "type": "line", "point": false },
+
+    {// Draw the lines
+      "mark": { "type": "line", "point": false }, // Remove the points on the line
       "encoding": {
         "x": { "field": "year", "type": "ordinal", "title": "Year" },
         "y": { "field": "avg_score", "type": "quantitative", "title": "Average team points per student" },
         "color": {
-          "condition": {
+          "condition": {// Highlight the top countries
             "test": "datum.country_new == 'China' || datum.country_new == 'United States of America' || datum.country_new == 'Russia'",
             "field": "country_new",
             "type": "nominal",
@@ -119,7 +107,7 @@ const line = {
       }
     },
     {
-    // Text label 1
+    // China label
     "data": { "values": [{"year": "2010", "avg_score": 42, "label": "China"}] },
     "mark": { "type": "text", "align": "left", "dx": 550, "dy": 0, "fontWeight": "bold" },
     "encoding": {
@@ -130,7 +118,7 @@ const line = {
     }
   },
   {
-    // Text label 2
+    // USA label
     "data": { "values": [{"year": "2012", "avg_score": 45, "label": "USA"}] },
     "mark": { "type": "text", "align": "left", "dx": 430, "dy": 70, "fontWeight": "bold" },
     "encoding": {
@@ -141,7 +129,7 @@ const line = {
     }
   },
     {
-    // Text label 2
+    // Russia label
     "data": { "values": [{"year": "2012", "avg_score": 45, "label": "Russia"}] },
     "mark": { "type": "text", "align": "left", "dx": 350, "dy": 115, "fontWeight": "bold" },
     "encoding": {
@@ -151,6 +139,7 @@ const line = {
       "color": { "value": "black" }
     }
   },
+  // Text annotations
   {
   "data": {
     "values": [
@@ -197,20 +186,20 @@ const line = {
     "text": {"field": "text"}
   }
 },
-{
+{// Line annotations for filling grey
   "data": {
-    "values": [{"x_start": "2020", "x_end": "2024"}]  // x_end = last year in your chart
+    "values": [{"x_start": "2020", "x_end": "2024"}]  
   },
   "mark": {
     "type": "rect",
-    "color": "#e1e1e1ff",  // light gray fill
-    "opacity": 0.3       // adjust transparency
+    "color": "#e1e1e1ff",  
+    "opacity": 0.3      
   },
   "encoding": {
     "x": { "field": "x_start", "type": "ordinal" },
     "x2": { "field": "x_end", "type": "ordinal" },
-    "y": { "value": 0 },          // bottom of chart
-    "y2": { "value": 400 }         // top of chart, adjust to match your y-axis max
+    "y": { "value": 0 },         
+    "y2": { "value": 400 }       
   }
 },
 {

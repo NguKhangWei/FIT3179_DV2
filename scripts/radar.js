@@ -7,8 +7,8 @@ const radar ={
   "autosize": {"type": "fit", "contains": "padding"},
 
   "signals": [
-    {"name": "radius", "update": "min(width, height)/2 * 0.7"},
-    {
+    {"name": "radius", "update": "min(width, height)/2 * 0.7"}, // For calculating radius (maximum distance from the centre)
+    {// For dropdown
       "name": "selectedCountry",
       "value": "United States of America",
       "bind": {
@@ -28,7 +28,7 @@ const radar ={
         "name": "Select Country: "
       }
     },
-    {
+    {// For the slider
       "name": "selectedYear",
       "value": 2000,
       "bind": {
@@ -52,12 +52,12 @@ const radar ={
       "source": "table",
       "transform": [{"type": "aggregate", "groupby": ["key"]}]
     },
-    {
+    {// Outer boundary of radar chart
       "name": "outerPolygon",
       "source": "keys",
       "transform": [{"type": "formula", "as": "r", "expr": "radius"}]
     },
-    {
+    {// Filter data for selected country and year
       "name": "filteredTable",
       "source": "table",
       "transform": [
@@ -67,14 +67,14 @@ const radar ={
   ],
 
   "scales": [
-    {
+    {// Map each key to a an angle around the centre
       "name": "angular",
       "type": "point",
       "range": {"signal": "[-PI, PI]"},
       "padding": 0.5,
       "domain": {"data": "table", "field": "key"}
     },
-    {
+    {// Performance score for each questoin (Maps value to distance from the centre)
       "name": "radial",
       "type": "linear",
       "range": {"signal": "[0, radius]"},
@@ -83,7 +83,7 @@ const radar ={
       "domain": {"data": "table", "field": "value"},
       "domainMin": 0
     },
-    {
+    {// Assign distinct color to each country
       "name": "color",
       "type": "ordinal",
       "domain": [
@@ -105,10 +105,10 @@ const radar ={
 
   "marks": [
     {
-      "type": "group",
+      "type": "group", // Centers all the element at the chart centre
       "encode": {"enter":{"x":{"signal":"width/2"},"y":{"signal":"height/2"}}},
       "marks": [
-        {
+        {// The spokes coming out of the centre of the radar chart
           "type": "rule",
           "from": {"data":"keys"},
           "encode": {
@@ -122,7 +122,7 @@ const radar ={
             }
           }
         },
-        {
+        {// Outer outline of the radar chart
           "type": "line",
           "from": {"data":"outerPolygon"},
           "encode": {
@@ -135,7 +135,7 @@ const radar ={
             }
           }
         },
-        {
+        {// Country performance polygon (The area at the centre dictated by the value in the table)
           "type": "line",
           "from": {"data":"filteredTable"},
           "encode": {
@@ -150,7 +150,7 @@ const radar ={
             }
           }
         },
-        {
+        {// Data labelling
           "type": "text",
           "from": {"data":"filteredTable"},
           "encode": {
@@ -166,7 +166,7 @@ const radar ={
             }
           }
         },
-        {
+        {// Axis labelling
           "type": "text",
           "from":{"data":"keys"},
           "encode": {

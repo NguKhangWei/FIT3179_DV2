@@ -19,7 +19,7 @@ const stacked = {
       "calculate": "datum.team_size_female == 'NA' ? 0 : parseInt(datum.team_size_female)", 
       "as": "female"
     },
-    {"fold": ["male", "female"], "as": ["gender", "count"]},
+    {"fold": ["male", "female"], "as": ["gender", "count"]}, // Transform into key value pairs
     {
       "aggregate": [
         {"op": "sum", "field": "count", "as": "total"}
@@ -27,7 +27,7 @@ const stacked = {
       "groupby": ["year", "gender"]
     }
   ],
-  "mark": "bar",
+  "mark": "bar", // Drawing the bar chart
   "encoding": {
     "x": {"field": "year", "type": "ordinal", "title": "Year"},
     "y": {"field": "total", "type": "quantitative", "title": "Number of Participants"},

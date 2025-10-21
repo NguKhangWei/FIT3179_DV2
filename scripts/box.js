@@ -14,12 +14,13 @@ const box = {
     "color": "#000000",
     "offset": 10
   },
+  // params for interactive elements
   "params": [
     {
-      "name": "selectedCountry",
-      "value": "People's Republic of China",
+      "name": "selectedCountry", // Define the variable
+      "value": "People's Republic of China", // Value of the variable
       "bind": {
-        "input": "select",
+        "input": "select", // Dropdwon type
         "options": [
           "People's Republic of China",
           "United States of America",

@@ -1,9 +1,4 @@
-/* =========================
-   style2.css — full replacement
-   Ensures charts and text share exact left/right edges.
-   ========================= */
 
-/* Basic page reset + fonts */
 html, body {
   margin: 0;
   padding: 0;
@@ -21,17 +16,6 @@ h1{
 }
 
 
-/* .chart-container {
-  width: 80%;               
-  max-width: 1400px;
-  margin: 0 auto;          
-  padding: 40px 0;          
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-  box-sizing: border-box;
-} */
-
 .chart-container {
   width: 80%;               
   max-width: 1200px;        
@@ -47,20 +31,16 @@ h1{
 }
 
 
-/* ---------- Chart Rows ---------- */
-/* Each row occupies full width of .chart-container so text rows below line up perfectly */
 .chart-row {
   width: 100%;
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
   align-items: stretch;
-  justify-content: center; /* keep layout predictable (no auto-centering) */
+  justify-content: center; 
   box-sizing: border-box;
-  /* border: #222 1px solid;  */
 }
 
-/* Two-column arrangement for radar + stacked */
 .chart-row-two {
   width: 100%;
   display: flex;
@@ -69,7 +49,7 @@ h1{
   justify-content: space-between;
   flex-wrap: wrap;
   box-sizing: border-box;
-  /* border: #222 1px solid;  */
+
 }
 
 .chart-col {
@@ -77,37 +57,36 @@ h1{
   min-width: 350px;
   display: flex;
   flex-direction: column;
-  align-items: stretch; /* stretch so chart text fills same width as chart */
+  align-items: stretch; 
   box-sizing: border-box;
 }
 
-/* Chart panel */
 .chart-half {
   width: 100%;
   min-height: 500px;
   display: flex;
-  justify-content: center; /* centers the vega embed inside the panel */
+  justify-content: center; 
   align-items: center;
   background: #fff;
   border-radius: 6px;
   box-shadow: 0 1px 4px rgba(0,0,0,0.06);
   box-sizing: border-box;
   overflow: hidden;
-  padding: 0;              /* important: no extra padding so edges match text */
+  padding: 0;             
 }
 
 #map .vega-bindings {
   display: flex !important;
-  flex-wrap: wrap;             /* Allow wrapping if window too narrow */
+  flex-wrap: wrap;            
   justify-content: center !important;
   align-items: center;
   width: 100%;
-  gap: 1rem;                   /* Space between controls */
-  margin: 10px auto;           /* Some breathing room above/below */
+  gap: 1rem;                  
+  margin: 10px auto;           
   text-align: center;
 }
 
-/* Make any direct children (vega embed container) occupy full space */
+
 .chart-half > div,
 .chart-half > iframe,
 .chart-half > svg,
@@ -117,7 +96,6 @@ h1{
   box-sizing: border-box;
 }
 
-/* Simple chart title / explanation block used in .chart-col */
 .chart-text {
   margin-top: 20px;
   width: 100%;
@@ -132,21 +110,20 @@ h1{
   color: #222;
 }
 
-/* ---------- Two-column text blocks (under each chart) ---------- */
-/* These rows sit directly under the chart row and share the same width as .chart-row */
+/* Text box split to 2 columns underneath chart */
 .chart-text-row {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr; /* two equal columns */
+  grid-template-columns: 1fr 1fr; 
   gap: 30px;
   align-items: start;
   box-sizing: border-box;
-  margin: 0; /* spacing handled by .chart-container gap */
+  margin: 0; 
 }
 
 /* Individual text column */
 .chart-text-col {
-  padding: 0;          /* NO side padding — keeps edges flush with chart above */
+  padding: 0;         
   text-align: left;
   box-sizing: border-box;
 }
@@ -156,25 +133,15 @@ h1{
   font-size: 1.08rem;
 }
 
-/* ---------- Heatmaps (gold/silver/bronze) ---------- */
-/* Left column holds the three heatmap widgets stacked vertically.
-   Right column is the text. Both columns align with container edges. */
+/* heatmaps */
 #gold, #silver, #bronze {
   width: 100%;
   min-height: 120px;
   margin-bottom: 18px;
   box-sizing: border-box;
-  /* keep backgrounds transparent so the .chart-half styling shows */
 }
 
-/* If you want the small heatmaps to appear as distinct cards, uncomment these:
-#gold, #silver, #bronze {
-  background: #fff;
-  border-radius: 6px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
-  padding: 8px;
-}
-*/
+
 
 /* ---------- Vega bindings (controls) ---------- */
 .vega-bindings {
@@ -187,7 +154,7 @@ h1{
   box-sizing: border-box;
 }
 
-/* ---------- Small visual tweaks ---------- */
+
 h2, p {
   font-family: inherit;
   color: #222;
@@ -203,7 +170,7 @@ p { margin: 0 0 10px 0; line-height: 1.45; }
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 40px; /* space between gold, silver, bronze rows */
+  gap: 40px; 
   /* border: #222 1px solid ;  */
 }
 
@@ -244,7 +211,7 @@ p { margin: 0 0 10px 0; line-height: 1.45; }
 .chart-row,
 .chart-row-two,
 .heatmap-pair {
-  justify-content: center; /* center whole block horizontally */
+  justify-content: center; 
 }
 
 #radar .vega-bindings {

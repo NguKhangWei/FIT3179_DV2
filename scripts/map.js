@@ -9,8 +9,8 @@ const map = {
   },
   "width": "container",
   "height": 500,
-  "params": [
-    {
+  "params": [// interactive elements
+    {// Zoom feature
       "name": "zoom_level",
       "value": 150,
       "bind": {
@@ -21,7 +21,7 @@ const map = {
         "name": "Zoom: "
       }
     },
-    {
+    {// For centering to a specific country
       "name": "center_to",
       "value": [0, 20],
       "bind": {
@@ -59,7 +59,7 @@ const map = {
       "mark": {"type": "geoshape", "stroke": "gray", "strokeWidth": 0.25}
     },
     {
-      "data": {
+      "data": {// For showing how to draw each country
         "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/3_choropleth_map/js/ne_110m_admin_0_countries.topojson",
         "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
       },
@@ -76,11 +76,11 @@ const map = {
           }
         },
         {
-          "calculate": "datum.count == null ? 0 : datum.count / 65",
+          "calculate": "datum.count == null ? 0 : datum.count / 65", // normalisation
           "as": "normalized_count"
         }
       ],
-      "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 0.5},
+      "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 0.5}, // Coloring the map
       "encoding": {
         "color": {
           "field": "normalized_count",
@@ -93,10 +93,10 @@ const map = {
           "legend": {
           "title": "Participation Ratio",
           "titleAnchor": "middle", 
-          "orient": "none",        // disable auto placement
+          "orient": "none",       
           "direction": "horizontal",
-          "legendX": 450,          // move right (adjust based on chart width)
-          "legendY": 60,           // move down (relative to height)
+          "legendX": 450,          
+          "legendY": 60,         
         }
 
         },
@@ -106,7 +106,7 @@ const map = {
         ]
       }
     },
-    {
+    {// Text annotation
       "data": {
         "values": [
           {"text": "Low participation due", "lon": 40, "lat": 10},
