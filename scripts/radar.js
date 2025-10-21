@@ -1,6 +1,6 @@
 const radar ={
   "$schema": "https://vega.github.io/schema/vega/v6.json",
-    "title": "Top 10 Countries IMO Performance (2020 to 2024)",
+    "title": "IMO Performance by Top 10 Countries (2020 to 2024)",
   "description": "Radar chart with country dropdown and year slider",
   "width": 500,
   "height": 480,
@@ -185,7 +185,7 @@ const radar ={
     }
   ],
   "config": {
-        "title": { "fontSize": 16, "anchor": "middle", "fontWeight": "bold", "offset": -22},
+        "title": { "fontSize": 18, "anchor": "middle", "fontWeight": "bold", "offset": -22},
     }
 }
 

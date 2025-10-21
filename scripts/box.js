@@ -7,8 +7,8 @@ const box = {
   "autosize": {"type": "pad", "contains": "padding"},
   "padding": {"bottom": 50},
   "title": {
-    "text": "Consistency of Competitor Scores by Country (2000-2023)",
-    "fontSize": 16,
+    "text": "Consistency of Competitor Scores by Country (2000 to 2023)",
+    "fontSize": 18,
     "fontWeight": "bold",
     "anchor": "middle",
     "color": "#000000",
@@ -93,11 +93,13 @@ const box = {
         "median": {"color": "black"}
       },
       "encoding": {
-        "x": {"field": "year", "type": "ordinal", "title": "Year"},
+        "x": {"field": "year", "type": "ordinal", "title": "Year", "axis": {
+    "titlePadding": 10  // <-- increase this value to move label further away
+  }},
         "y": {
           "field": "normalised_total",
           "type": "quantitative",
-          "title": "Normalised Score",
+          "title": "Normalized Individual Score",
           "scale": {"domain": [0, 1.1]}
         },
         "color": {

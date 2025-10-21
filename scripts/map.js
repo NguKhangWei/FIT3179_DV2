@@ -1,10 +1,10 @@
 const map = {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "International Math Olympiad Participation Ratio by Country (1959–2024)",
+    "text": "IMO Participation Ratio by Country (1959 to 2024)",
     "anchor": "middle",
     "align": "center",
-    "fontSize": 24,
+    "fontSize": 18,
     "offset" : 0
   },
   "width": "container",
@@ -119,6 +119,49 @@ const map = {
         "fontSize": 12,
         "dy": -10,
         "dx": 5,
+        "color": "black",
+        "fontStyle": "italic"
+      },
+      "encoding": {
+        "longitude": {"field": "lon", "type": "quantitative"},
+        "latitude": {"field": "lat", "type": "quantitative"},
+        "text": {"field": "text"}
+      }
+    },
+    {// Text annotation
+      "data": {
+        "values": [
+          {"text": "No participation due to", "lon": 40, "lat": 10},
+          {"text": "no permanent population", "lon": 39, "lat": 5},
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "fontSize": 12,
+        "dy": 190,
+        "dx": 5,
+        "color": "black",
+        "fontStyle": "italic"
+      },
+      "encoding": {
+        "longitude": {"field": "lon", "type": "quantitative"},
+        "latitude": {"field": "lat", "type": "quantitative"},
+        "text": {"field": "text"}
+      }
+    },
+    {// Text annotation
+      "data": {
+        "values": [
+          {"text": "Contains", "lon": 40, "lat": 10},
+          {"text": "missing", "lon": 40, "lat": 5},
+          {"text": "records", "lon": 40, "lat": 0},
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "fontSize": 12,
+        "dy": -140,
+        "dx": 50,
         "color": "black",
         "fontStyle": "italic"
       },

@@ -5,11 +5,11 @@ const stream = {
   "width": "container",
   "height": "container",
   "title": {
-    "text": "Trend in each IMO Problem Performance (1981 to 2024)",
-    "fontSize": 16,
+    "text": "Trends in IMO Problem Performance (1981 to 2024)",
+    "fontSize": 18,
     "fontWeight": "bold",
     "anchor": "middle",
-    "offset": 20
+    "offset": 0
   },
 
   "layer": [
@@ -63,7 +63,22 @@ const stream = {
       },
       "encoding": {
         "x": { "field": "year", "type": "ordinal" },
-        "y": { "value": 50 },
+        "y": { "value": 70 },
+        "y2": { "value": 200 }  
+      }
+    },
+    {// Line annotation
+      "data": {
+        "values": [{"year": "2000"}]
+      },
+      "mark": {
+        "type": "rule",
+        "color": "black",
+        "strokeWidth": 1
+      },
+      "encoding": {
+        "x": { "field": "year", "type": "ordinal" },
+        "y": { "value": 70 },
         "y2": { "value": 200 }  
       }
     },
@@ -78,23 +93,48 @@ const stream = {
       },
       "encoding": {
         "x": { "field": "year", "type": "ordinal" },
-        "y": { "value": 285 },
-        "y2": { "value": 300 }  // set this to roughly the max of your y-axis
+        "y": { "value": 300 },
+        "y2": { "value": 318 }  // set this to roughly the max of your y-axis
       }
     },
 
     {// Text annotation
   "data": {
+    // "values": [
+    //   {"text": "Problem 3 scores declined steadily,", "year": 2007, "y_custom": 8},
+    //   {"text": "reaching their lowest point in 2017,", "year": 2007, "y_custom": 6.5},
+    //   {"text": "one of the toughest IMO on record", "year": 2007, "y_custom": 5},
+    // ]
     "values": [
-      {"text": "Problem 3 scores declined steadily,", "year": 2007, "y_custom": 8},
-      {"text": "reaching their lowest point in 2017,", "year": 2007, "y_custom": 6.5},
-      {"text": "one of the toughest IMO on record", "year": 2007, "y_custom": 5},
+      {"text": "Lowest peformance in 2017 during one", "year": 2007, "y_custom": 8},
+      {"text": "of the hardest IMOs ever recorded", "year": 2007, "y_custom": 6.5},
     ]
   },
   "mark": {
     "type": "text",
     "dx": 925,
-    "dy": -260,
+    "dy": -245,
+    "fontSize": 12,
+    "fontStyle": "italic",
+    "color": "black"
+  },
+  "encoding": {
+    "x": {"field": "year", "type": "ordinal"},
+    "y": {"field": "y_custom", "type": "quantitative"},
+    "text": {"field": "text"}
+  }
+},
+{// Text annotation
+  "data": {
+    "values": [
+      {"text": "This marks the beginning of the", "year": 2007, "y_custom": 8},
+      {"text": "decline in Problem 3 scores", "year": 2007, "y_custom": 6.5},
+    ]
+  },
+  "mark": {
+    "type": "text",
+    "dx": 500,
+    "dy": -245,
     "fontSize": 12,
     "fontStyle": "italic",
     "color": "black"

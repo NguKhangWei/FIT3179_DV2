@@ -2,7 +2,7 @@ const stacked = {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "Total IMO male and female participants per year from 2000 onwards",
   "background": "transparent",
-  "title": "Proportion of Male and Female IMO Participants (2000 to 2024)",
+  "title": "IMO Participants by Gender (2000 to 2024)",
   "width": 500,
   "height": "container",
   "data": {
@@ -37,10 +37,15 @@ const stacked = {
       "scale": {"domain": ["male", "female"], "range": ["#5b9ccaff", "#df8537ff"]},
       "title": "Gender",
       "legend": {"orient": "left", "offset": -100}
-    }
+    },
+    "tooltip": [
+      {"field": "year", "type": "ordinal", "title": "Year"},
+      {"field": "gender", "type": "nominal", "title": "Gender"},
+      {"field": "total", "type": "quantitative", "title": "Participants"}
+    ]
   },
   "config": {
-        "title": { "fontSize": 16, "anchor": "middle", "fontWeight": "bold", },
+        "title": { "fontSize": 18, "anchor": "middle", "fontWeight": "bold", },
     }
 }
 ;

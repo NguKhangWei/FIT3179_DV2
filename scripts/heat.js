@@ -208,12 +208,8 @@ const gold = {
       }
     },
     "tooltip": [
-      {"field": "year", "type": "ordinal"},
-      {"field": "continent", "type": "nominal"},
-      {"field": "total_gold", "type": "quantitative", "title": "Gold"},
-      {"field": "total_silver", "type": "quantitative", "title": "Silver"},
-      {"field": "total_bronze", "type": "quantitative", "title": "Bronze"},
-      {"field": "total_hm", "type": "quantitative", "title": "Hon. Mentions"},
+      {"field": "year", "type": "ordinal", "title": "Year"},
+      {"field": "continent", "type": "nominal", "title": "Continent"},
       {"field": "gold_ratio", "type": "quantitative", "title": "Gold Ratio", "format": ".2f"}
     ]
   }
@@ -433,12 +429,8 @@ const silver = {
       }
     },
     "tooltip": [
-      {"field": "year", "type": "ordinal"},
-      {"field": "continent", "type": "nominal"},
-      {"field": "total_gold", "type": "quantitative", "title": "Gold"},
-      {"field": "total_silver", "type": "quantitative", "title": "Silver"},
-      {"field": "total_bronze", "type": "quantitative", "title": "Bronze"},
-      {"field": "total_hm", "type": "quantitative", "title": "Hon. Mentions"},
+      {"field": "year", "type": "ordinal", "title": "Year"},
+      {"field": "continent", "type": "nominal", "title": "Continent"},
       {"field": "silver_ratio", "type": "quantitative", "title": "Silver Ratio", "format": ".2f"}
     ]
   }
@@ -654,12 +646,8 @@ const bronze = {
       }
     },
     "tooltip": [
-      {"field": "year", "type": "ordinal"},
-      {"field": "continent", "type": "nominal"},
-      {"field": "total_gold", "type": "quantitative", "title": "Gold"},
-      {"field": "total_silver", "type": "quantitative", "title": "Silver"},
-      {"field": "total_bronze", "type": "quantitative", "title": "Bronze"},
-      {"field": "total_hm", "type": "quantitative", "title": "Hon. Mentions"},
+      {"field": "year", "type": "ordinal", "title": "Year"},
+      {"field": "continent", "type": "nominal", "title": "Continent"},
       {"field": "bronze_ratio", "type": "quantitative", "title": "Bronze Ratio", "format": ".2f"}
     ]
   }

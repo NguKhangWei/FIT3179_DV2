@@ -3,8 +3,8 @@ const bump = {
   "description": "IMO bump chart: 5 countries 2014-2024 (India replaces Russia) with line-end labels instead of a legend",
   "background": "transparent",
   "title": {
-    "text": "Top 5 Active IMO Participating Countries",
-    "fontSize": 20,
+    "text": "Top 5 Active IMO Participating Countries (2014 to 2024)",
+    "fontSize": 18,
     "fontWeight": "bold",
     "anchor": "middle",
     "offset": 20

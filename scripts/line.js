@@ -4,7 +4,7 @@ const line = {
   "background": "transparent",
   "title": {
     "text": "Average Team Score per Student for Selected Countries (2000 to 2024)",
-    "fontSize": 16,
+    "fontSize": 18,
     "fontWeight": "bold",
     "anchor": "middle",
     "offset": 20
@@ -99,11 +99,11 @@ const line = {
           "value": "lightgrey"
         },
         "tooltip": [
-          {"field": "year", "type": "ordinal"},
-          {"field": "country_new", "type": "nominal"},
-          {"field": "avg_score", "type": "quantitative", "format": ".2f"},
-          {"field": "team_total", "type": "quantitative"}
+          {"field": "year", "type": "ordinal", "title": "Year"},
+          {"field": "country_new", "type": "nominal", "title": "Country"},
+          {"field": "avg_score", "type": "quantitative", "format": ".2f", "title": "Average Score"}
         ]
+
       }
     },
     {
